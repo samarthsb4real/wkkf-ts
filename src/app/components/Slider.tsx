@@ -3,10 +3,11 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <div className="carousel rounded-box mr-12 border">
+    <div className="carousel rounded-box h-96 border w-auto">
       <div className="carousel-item">
         <img
           src="home/1.jpg"
+          className="w-full"
           alt="Tailwind CSS Carousel component"
         />
       </div>
