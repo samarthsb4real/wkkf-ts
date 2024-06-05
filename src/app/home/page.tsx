@@ -70,13 +70,20 @@ export default function HomePage() {
             </button>
           </motion.div>
         </ImagesSlider>
+
         <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <motion.p className="font-bold text-xl md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+              Testimonials<br />
+            </motion.p>
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
           speed="slow"
         />
       </div>
+
+
+      
       </div>
       );
 }
