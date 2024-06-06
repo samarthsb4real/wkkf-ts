@@ -18,7 +18,9 @@ const Navbar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
+                      
             <details>
+            
               <summary>About Us</summary>
               <ul>
                 <li>
@@ -27,13 +29,12 @@ const Navbar = () => {
                 <li>
                   <a>Branches</a>
                 </li>
+                
                 <li>
                   <details>
                     <summary>Members</summary>
                     <ul>
-                      <li>
-                        <Link href="home">Home</Link>
-                      </li>
+                      
                       <li>
                         <Link href="/committee" title="committee">Committee</Link>
                       </li>
@@ -53,6 +54,8 @@ const Navbar = () => {
           <li>
             <Link href="/register">Register</Link>
           </li>
+          <li><Link href="home">Home</Link>
+                      </li>
         </ul>
       </div>
     </div>
