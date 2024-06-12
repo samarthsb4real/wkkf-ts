@@ -10,7 +10,7 @@ const Navbar = () => {
     
       <div className="flex-none"></div>
       <div className="flex-1">
-        <Link className="btn btn-ghost text-2xl" href="/">
+        <Link className="btn btn-ghost text-2xl" href="/home">
           <img src="logo-removebg.png" className="w-12" />
           World Karate & Kobudo Federation{" "}
         </Link>
@@ -52,10 +52,12 @@ const Navbar = () => {
           </li>
 
           <li>
+            <Link href="/sheets">Sheets</Link>
+          </li>
+
+          <li>
             <Link href="/register">Register</Link>
           </li>
-          <li><Link href="home">Home</Link>
-                      </li>
         </ul>
       </div>
     </div>

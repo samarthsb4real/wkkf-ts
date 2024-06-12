@@ -5,6 +5,7 @@ import { Input } from "../ui/input";
 import { cn } from "@/utils/cn";
 import { NextPage } from "next";
 
+
 const BottomGradient = () => {
   return (
     <>
@@ -42,7 +43,7 @@ const Home: NextPage = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
 
@@ -61,10 +62,37 @@ const Home: NextPage = () => {
       email
     }
 
-    console.log("Form submitted", form);
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
+
+    const content = await response.json();
+
+    console.log(content)
+    alert(content.data.tableRange)
+
+    setFirstname('')
+    setLastname('')
+    setFathername('')
+    setDob('')
+    setDoj('')
+    setCity('')
+    setState('')
+    setCountry('')
+    setAddress('')
+    setOccupation('')
+    setPhone('')
+    setEmail('')
+
   };
 
   return (
+    <main>
     <div className="max-w-2xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
       <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
         Registration Form
@@ -253,6 +281,7 @@ const Home: NextPage = () => {
         </button>
       </form>
     </div>
+    </main>
   );
 };
 
