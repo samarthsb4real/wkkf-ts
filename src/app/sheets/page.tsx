@@ -218,7 +218,7 @@ export default function SignupForm() {
 
           <LabelInputContainer className="mb-4">
             <Label htmlFor="address">Address</Label>
-            <textarea
+            <Input
               id="address"
               placeholder="Enter your present address"
               className="form-textarea mt-1 block w-full"
