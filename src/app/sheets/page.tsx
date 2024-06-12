@@ -221,7 +221,6 @@ export default function SignupForm() {
             <Input
               id="address"
               placeholder="Enter your present address"
-              className="form-textarea mt-1 block w-full"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
