@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // pages/boardMembers.js
 
 import React from "react";
@@ -180,7 +181,7 @@ const BoardMembersPage = () => {
         {boardMembers.map((member) => (
           <div
             key={member.id}
-            className="flex border border-gray-200 items-center rounded-lg overflow-hidden w-42 h-56"
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
           >
             <img
               src={member.image}
