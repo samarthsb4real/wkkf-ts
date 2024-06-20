@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
@@ -11,6 +12,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: string;
+    image?: string;
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -40,29 +42,10 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
-  const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-  ];
-
-  const [backgroundGradient, setBackgroundGradient] = useState(
-    linearGradients[0]
-  );
-
-  useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard]);
-
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        backgroundColor: "transparent",
       }}
       className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
@@ -93,18 +76,35 @@ export const StickyScroll = ({
               >
                 {item.description}
               </motion.p>
+              {item.content && (
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                >
+                  {item.content}
+                </motion.div>
+              )}
             </div>
           ))}
           <div className="h-40" />
         </div>
       </div>
       <div
-        style={{ background: backgroundGradient }}
         className={cn(
           "hidden lg:block items-end h-80 w-1/3 rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
+        {content[activeCard].image && (
+          <img src={content[activeCard].image} alt="" className="w-full h-full object-cover" />
+        )}
         {content[activeCard].content ?? null}
       </div>
     </motion.div>

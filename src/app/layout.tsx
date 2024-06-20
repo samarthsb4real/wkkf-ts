@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html className={inter.className}>
       <body>
-        <div className="z-90">
+        <div className="z-90 my-16">
           <Navbar />
         </div>
         {children}

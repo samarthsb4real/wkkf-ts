@@ -5,6 +5,17 @@ import React from "react";
 
 const BoardMembersPage = () => {
   // Dummy data for board members
+
+  const founder = [
+    {
+        id: 1,
+        name: "Mangesh Rangnath Dhimte",
+        rank: "4th Dan Black Belt",
+        position: "Founder & Advisor",
+        image:
+          "members/a1 Founder & Advisor Mangesh Rangnath Dhimte 4th Dan Black Belt.jpg",
+      },
+  ];
   const boardMembers = [
     {
       id: 1,
@@ -14,6 +25,16 @@ const BoardMembersPage = () => {
       image:
         "members/3 Aniket Vivek Kawalkar (4th Dan Black Belt) Chairman.JPG",
     },
+    
+    {
+      id: 3,
+      name: "Avdhut Madhukar Shelar",
+      rank: "4th Dan Black Belt",
+      position: "Vice Chairman & Technical Director",
+      image:
+        "members/6 Avdhut Madhukar Shelar (4th Dan Black Belt) Technical Director.JPG",
+    },
+    
     {
       id: 2,
       name: "Abhijit Sanjay Gaikwad",
@@ -23,14 +44,7 @@ const BoardMembersPage = () => {
         "members/4 Abhijit Sanjay Gaikwad (2nd Dan Black Belt) General Secretary.jpg",
     },
 
-    {
-      id: 3,
-      name: "Avdhut Madhukar Shelar",
-      rank: "4th Dan Black Belt",
-      position: "Technical Director",
-      image:
-        "members/6 Avdhut Madhukar Shelar (4th Dan Black Belt) Technical Director.JPG",
-    },
+    
     {
       id: 4,
       name: "Nupur Mangesh Dhimte",
@@ -175,8 +189,55 @@ const BoardMembersPage = () => {
   ];
 
   return (
-    <div className="container mx-auto m-12 px-4 ">
-      <h1 className="text-5xl font-bold m-8 text-center">Board Members</h1>
+    <div className="container mx-auto m-12 min-w-full px-4 py-8">
+      
+      <h1 className="text-5xl font-bold m-8 text-center">Founder</h1>
+      <div className="grid w-full justify-center gap-8 p-8">
+        {founder.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-42  h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-lg text-gray-300">{member.position}</p>
+              <p className="text-md text-gray-500">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+
+      <h1 className="text-5xl font-bold m-8 text-center">Senior Council</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {boardMembers.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-42 h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-lg text-gray-300">{member.position}</p>
+              <p className="text-md text-gray-500">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h1 className="text-5xl font-bold m-8 text-center">Assistant Council</h1>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {boardMembers.map((member) => (
           <div
@@ -196,6 +257,29 @@ const BoardMembersPage = () => {
           </div>
         ))}
       </div>
+
+      <h1 className="text-5xl font-bold m-8 text-center">Advisors</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {boardMembers.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-42  h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-lg text-gray-300">{member.position}</p>
+              <p className="text-md text-gray-500">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 };

@@ -1,5 +1,3 @@
-"use client"
-
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -21,7 +19,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2  py-10",
         className
       )}
     >
@@ -80,19 +78,6 @@ export const Card = ({
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const CardTitle = ({
   className,
   children,
@@ -106,8 +91,6 @@ export const CardTitle = ({
     </h4>
   );
 };
-
-
 export const CardDescription = ({
   className,
   children,
@@ -117,10 +100,8 @@ export const CardDescription = ({
 }) => {
   return (
     <p
-      className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
-        className
-      )}
+      className=
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm"
     >
       {children}
     </p>
