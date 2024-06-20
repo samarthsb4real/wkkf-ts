@@ -1,7 +1,13 @@
 // components/MapBanner.js
 import React from "react";
 
-const MapBanner = ({ address, lat, lng }) => {
+interface MapBannerProps {
+  address: string;
+  lat: number;
+  lng: number;
+}
+
+const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
   const mapSrc = `https://www.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
 
   return (
@@ -30,7 +36,6 @@ const MapBanner = ({ address, lat, lng }) => {
           src={mapSrc}
           width="100%"
           height="100%"
-          allowFullScreen=""
           loading="lazy"
           className="absolute inset-0 border-0 rounded-xl"
           title="Google Maps"
@@ -41,3 +46,6 @@ const MapBanner = ({ address, lat, lng }) => {
 };
 
 export default MapBanner;
+
+
+
