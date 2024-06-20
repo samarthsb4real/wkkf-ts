@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import { ImagesSlider } from "../ui/images-slider";
+import { ImagesSlider } from "../components/ui/images-slider";
 import Link from "next/link";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-import { HoverEffect } from "../ui/card-hover-effect";
-import { StickyScroll } from "../ui/sticky-scroll-reveal";
+import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
+import { HoverEffect } from "../components/ui/card-hover-effect";
+import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 import MapBanner from "../components/Mapbanner";
 
