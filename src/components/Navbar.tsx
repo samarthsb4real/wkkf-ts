@@ -6,11 +6,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 fixed-page-layout p-2">
-    
+    <div className="navbar bg-base-100 fixed top-0 left-0 w-full z-50 p-2">
       <div className="flex-none"></div>
       <div className="flex-1">
-        <Link className="btn btn-ghost text-2xl" href="/home">
+        <Link className="btn btn-ghost text-2xl" href="/">
           <img src="logo-removebg.png" className="w-12" />
           World Karate & Kobudo Federation{" "}
         </Link>
@@ -18,45 +17,38 @@ const Navbar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-                      
             <details>
-            
               <summary>About Us</summary>
               <ul>
                 <li>
-                  <Link href="/about">Chairman's Desk</Link>
+                  <Link href="/about">About Council</Link>
                 </li>
                 <li>
-                  <a>Branches</a>
-                </li>
-                
-                <li>
-                  <details>
-                    <summary>Members</summary>
-                    <ul>
-                      
-                      <li>
-                        <Link href="/committee" title="committee">Committee</Link>
-                      </li>
-                      <li>
-                        <Link href="/council">Council</Link>
-                      </li>
-                      <li>
-                        <Link href="/students">Students</Link>
-                      </li>
-                    </ul>
-                  </details>
+                  <Link href="/committee" title="committee">
+                    Committee
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
-
           <li>
-            <Link href="/sheets">Sheets</Link>
+            <Link href="/notice">Notice</Link>
           </li>
-
           <li>
-            <Link href="/register">Register</Link>
+            <details className="w-50">
+              <summary>Register</summary>
+              <ul>
+                <li>
+                  <Link href="/register/student">As a Student</Link>
+                </li>
+                <li>
+                  <Link href="/register/mentor">As a Mentor</Link>
+                </li>
+                <li>
+                  <Link href="/register/dojo">Dojo Registration</Link>
+                </li>
+              </ul>
+            </details>
           </li>
         </ul>
       </div>
