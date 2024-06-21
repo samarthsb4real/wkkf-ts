@@ -1,4 +1,3 @@
-// components/MapBanner.js
 import React from "react";
 
 interface MapBannerProps {
@@ -11,10 +10,10 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
   const mapSrc = `https://www.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
 
   return (
-    <div className="flex w-full h-1/2 m-8">
+    <div className="flex flex-col md:flex-row w-full h-auto m-4 md:m-8">
       {/* Left side: Details */}
-      <div className="w-1/2 bg-gray-900 p-8 overflow-y-auto rounded-xl">
-        <h1 className="text-3xl font-bold mb-4">Location Details</h1>
+      <div className="w-full md:w-1/2 bg-gray-900 p-4 md:p-8 overflow-y-auto rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+        <h1 className="text-xl md:text-3xl font-bold mb-4">Location Details</h1>
         <div className="mb-4">
           <strong>Address:</strong> {address}
         </div>
@@ -24,20 +23,20 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
         <div className="mb-4">
           <strong>Longitude:</strong> {lng}
         </div>
-        <p className="text-gray-600">
+        <p className="text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           consectetur justo nec nisl ullamcorper, sit amet pretium felis
           ultricies.
         </p>
       </div>
       {/* Right side: Map */}
-      <div className="w-1/2 relative">
+      <div className="w-full md:w-1/2 relative h-64 md:h-auto">
         <iframe
           src={mapSrc}
           width="100%"
           height="100%"
           loading="lazy"
-          className="absolute inset-0 border-0 rounded-xl"
+          className="absolute inset-0 border-0 rounded-b-xl md:rounded-r-xl md:rounded-bl-none"
           title="Google Maps"
         ></iframe>
       </div>
@@ -46,6 +45,3 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
 };
 
 export default MapBanner;
-
-
-

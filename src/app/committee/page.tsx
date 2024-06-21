@@ -189,97 +189,91 @@ const BoardMembersPage = () => {
   ];
 
   return (
-    <div className="container mx-auto m-12 min-w-full px-4 py-8">
+    <div className="container mx-auto my-12 min-w-full px-4 py-8">
       
-      <h1 className="text-5xl font-bold m-8 text-center">Founder</h1>
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">Founder</h1>
       <div className="grid w-full justify-center gap-8 p-8">
         {founder.map((member) => (
           <div
             key={member.id}
-            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-42  h-56 object-cover"
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
-              <p className="text-lg text-gray-300">{member.position}</p>
-              <p className="text-md text-gray-500">{member.rank}</p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-sm md:text-lg text-gray-700">{member.position}</p>
+              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
             </div>
           </div>
         ))}
       </div>
 
-
-
-      <h1 className="text-5xl font-bold m-8 text-center">Senior Council</h1>
-      
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">Senior Council</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {boardMembers.map((member) => (
           <div
             key={member.id}
-            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-42 h-56 object-cover"
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
-              <p className="text-lg text-gray-300">{member.position}</p>
-              <p className="text-md text-gray-500">{member.rank}</p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-sm md:text-lg text-gray-700">{member.position}</p>
+              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <h1 className="text-5xl font-bold m-8 text-center">Assistant Council</h1>
-      
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">Assistant Council</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {boardMembers.map((member) => (
           <div
             key={member.id}
-            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-42  h-56 object-cover"
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
-              <p className="text-lg text-gray-300">{member.position}</p>
-              <p className="text-md text-gray-500">{member.rank}</p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-sm md:text-lg text-gray-700">{member.position}</p>
+              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <h1 className="text-5xl font-bold m-8 text-center">Advisors</h1>
-      
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">Advisors</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {boardMembers.map((member) => (
           <div
             key={member.id}
-            className="flex border border-gray-300 items-center rounded-lg overflow-hidden w-42 h-56"
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-42  h-56 object-cover"
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">{member.name}</h2>
-              <p className="text-lg text-gray-300">{member.position}</p>
-              <p className="text-md text-gray-500">{member.rank}</p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">{member.name}</h2>
+              <p className="text-sm md:text-lg text-gray-700">{member.position}</p>
+              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
             </div>
           </div>
         ))}
       </div>
-
     </div>
   );
 };

@@ -7,13 +7,16 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 fixed top-0 left-0 w-full z-50 p-2">
-      <div className="flex-none"></div>
       <div className="flex-1">
-        <Link className="btn btn-ghost text-2xl" href="/">
+        <Link className="btn btn-ghost text-2xl text-white" href="/">
           <img src="logo-removebg.png" className="w-12" />
-          World Karate & Kobudo Federation{" "}
+          <span className="hidden lg:inline ">
+            World Karate & Kobudo Federation
+          </span>
+          <span className="inline lg:hidden text-center">WKKF</span>
         </Link>
       </div>
+
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>

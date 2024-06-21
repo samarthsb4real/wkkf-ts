@@ -1,11 +1,11 @@
 export default function Chairman() {
   return (
-    <div className=" min-h-screen mt-12">
+    <div className="min-h-screen mt-4">
       <title>Council Mission & Vision</title>
-      <div className="container mx-auto py-12 px-4">
-        <div className=" justify-center">
+      <div className="container mx-auto py-4 px-4">
+        <div className="justify-center">
           <div className="w-full p-8">
-            <h1 className="text-5xl font-bold mb-8 text-Left">
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
               Council Mission & Vision
             </h1>
 
@@ -53,11 +53,15 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-5xl font-bold mb-8 text-Left">Founder</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
+              Founder
+            </h1>
 
-            <div className="flex">
-              <div className="w-1/2">
-                <p className="text-xl font-semibold mb-4">Dear Members,</p>
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2">
+                <p className="text-lg md:text-xl font-semibold mb-4">
+                  Dear Members,
+                </p>
                 <p className="mb-4">
                   It is with great honor and enthusiasm that I address you as
                   the chairman of the World Karate & Kobudo Federation. Our
@@ -88,7 +92,7 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-1/2 ml-16 justify-center rounded-xl p-8 bg-red-600">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl p-8 bg-red-600 flex items-center text-center text-white">
                 Photo
               </div>
             </div>
@@ -97,11 +101,15 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-5xl font-bold mb-8 text-Left">Chairman</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
+              Chairman
+            </h1>
 
-            <div className="flex">
-              <div className="w-1/2">
-                <p className="text-xl font-semibold mb-4">Dear Members,</p>
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2">
+                <p className="text-lg md:text-xl font-semibold mb-4">
+                  Dear Members,
+                </p>
                 <p className="mb-4">
                   It is with great honor and enthusiasm that I address you as
                   the chairman of the World Karate & Kobudo Federation. Our
@@ -132,7 +140,7 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-1/2 ml-16 justify-center rounded-xl p-8 bg-red-600">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl p-8 bg-red-600 flex items-center text-center text-white">
                 Photo
               </div>
             </div>
@@ -141,11 +149,15 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-5xl font-bold mb-8 text-Left">Vice Chairman</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
+              Vice Chairman
+            </h1>
 
-            <div className="flex">
-              <div className="w-1/2">
-                <p className="text-xl font-semibold mb-4">Dear Members,</p>
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2">
+                <p className="text-lg md:text-xl font-semibold mb-4">
+                  Dear Members,
+                </p>
                 <p className="mb-4">
                   It is with great honor and enthusiasm that I address you as
                   the chairman of the World Karate & Kobudo Federation. Our
@@ -176,7 +188,7 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-1/2 ml-16 justify-center rounded-xl p-8 bg-red-600">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl p-8 bg-red-600 flex items-center text-center text-white">
                 Photo
               </div>
             </div>
@@ -185,11 +197,15 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-5xl font-bold mb-8 text-Left">Secretary</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
+              Secretary
+            </h1>
 
-            <div className="flex">
-              <div className="w-1/2">
-                <p className="text-xl font-semibold mb-4">Dear Members,</p>
+            <div className="flex flex-col md:flex-row">
+              <div className="w-full md:w-1/2">
+                <p className="text-lg md:text-xl font-semibold mb-4">
+                  Dear Members,
+                </p>
                 <p className="mb-4">
                   It is with great honor and enthusiasm that I address you as
                   the chairman of the World Karate & Kobudo Federation. Our
@@ -220,7 +236,7 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-1/2 ml-16 justify-center rounded-xl p-8 bg-red-600">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl p-8 bg-red-600 flex items-center text-center text-white">
                 Photo
               </div>
             </div>
