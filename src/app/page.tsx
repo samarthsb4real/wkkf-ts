@@ -8,7 +8,6 @@ import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import Link from "next/link";
 import MapBanner from "../components/Mapbanner";
 import { NextUIProvider } from "@nextui-org/react";
-import Navbar2 from "@/components/Navbar2";
 
 const images = [
   "https://img.goodfon.com/original/2475x1650/1/f0/kick-karate-fight-training.jpg",
@@ -72,7 +71,7 @@ const content = [
   },
 ];
 
-const HomePage = () => {
+export default function HomePage () {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -141,4 +140,3 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
