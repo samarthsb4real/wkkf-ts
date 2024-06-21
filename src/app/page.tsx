@@ -103,7 +103,7 @@ export default function HomePage () {
           </ImagesSlider>
         )}
 
-        <div className="min-h-screen rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden p-4 md:p-8">
+        <div className="min-h-screen rounded-md flex flex-col antialiased bg-black-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden p-4 md:p-8">
           <motion.p className="font-bold text-lg sm:text-xl md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Testimonials
             <br />
@@ -115,14 +115,14 @@ export default function HomePage () {
           />
         </div>
 
-        <div className="max-w-full mx-auto px-4 md:px-8">
+        <div className="max-w-full mx-auto px-4 md:px-8 ">
           <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Our Associates
           </motion.p>
           <HoverEffect items={projects} />
         </div>
 
-        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
+        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
           <StickyScroll
             content={content}
            />
