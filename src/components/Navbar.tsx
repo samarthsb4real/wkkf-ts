@@ -96,7 +96,6 @@ export default function Navbar2() {
                   : "foreground"
               }
               className="w-full text-white"
-              href="#"
               size="lg"
             >
               {item.label}
