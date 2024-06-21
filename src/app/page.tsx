@@ -123,8 +123,10 @@ const HomePage = () => {
           <HoverEffect items={projects} />
         </div>
 
-        <div className="no-visible-scrollbar m-4 md:m-12 rounded-2xl h-full p-4 md:p-8 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
-          <StickyScroll content={content} />
+        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
+          <StickyScroll
+            content={content}
+           />
         </div>
 
         <div className="flex justify-center items-center bg-gray-900 py-8">
