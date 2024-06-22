@@ -64,6 +64,13 @@ export default function Navbar2() {
             <li>
               <Link className="text-white" href="/gallery">Gallery</Link>
             </li>
+
+            <li>
+              <Link className="text-white" href="/qualified-members">Qualified Members</Link>
+            </li>
+
+
+
             <li>
               <details className="w-50">
                 <summary>Register</summary>
