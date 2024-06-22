@@ -5,14 +5,18 @@ import React, { useEffect, useState } from "react";
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { ImagesSlider } from "../components/ui/images-slider";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
-import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import Link from "next/link";
 import MapBanner from "../components/Mapbanner";
 import { NextUIProvider } from "@nextui-org/react";
 
 const images = [
-  "https://img.goodfon.com/original/2475x1650/1/f0/kick-karate-fight-training.jpg",
-  "https://images.unsplash.com/photo-1526889588514-2e695856df85?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "ss/3.jpg",
+  "ss/5.jpg",
+  "ss/2.jpg",
+  "ss/9.jpg",
+  "ss/6.jpg",
+  "ss/7.jpg",
+  "ss/8.jpg",
 ];
 
 const projects = [
@@ -48,7 +52,7 @@ const testimonials = [
 
   {
     quote:
-      "Serving as the Vice Chairman and Technical Director of WKK has been an incredible journey. Our commitment to excellence in the core conceptual aspects of martial arts has set us apart as a leading organization in the field, & It is an honor to work alongside such dedicated individuals who share a passion for Karate and Kobudo, and I am excited about the future we are building together",
+      "Serving as the Vice Chairman and Technical Director of WKKF has been an incredible journey. Our commitment to excellence in the core conceptual aspects of martial arts has set us apart as a leading organization in the field, & It is an honor to work alongside such dedicated individuals who share a passion for Karate and Kobudo, and I am excited about the future we are building together",
     name: "— Sensei Avdhut Shelar",
     title: "Vice Chairman & Technical Director",
   },
@@ -147,20 +151,17 @@ export default function HomePage() {
                   </p>
 
                   <p className="mb-4 text-xl text-justify">
-                    He has been familiar with martial arts since he was a child
-                    and has experienced various martial arts and martial arts
-                    including traditional karate. ・ Aiki Martial Arts (9th Dan)
-                    ・ Goju Jiu-Jitsu (9th Dan) ・ Shito-ryu Kenpo Karatedo (7th
-                    Dan / Master) ・ Seishin-ryu Kenpo Karatedo (7th Dan) ・
-                    Karate Leaders Association Master (6th Dan). All Japan
-                    Martial Arts Association Master, Kickboxing Self-Defense
-                    (Sandan), Armor Karate (Sandan), WTF Taekwondo (1st Stage),
-                    Okinawa Kobudo (Preservation Society), Weapons (Canes,
-                    Wooden Swords, Guards, Knives) Kickboxing (former all-Japan
-                    kick professional player), mixed martial arts (full contact
-                    comprehensive karate system) We are energetically continuing
-                    activities to systematize and compile those techniques and
-                    techniques and pass them on to future generations.
+                    He has been engaged in martial arts since childhood, earning
+                    high ranks in various disciplines: Aiki Martial Arts (9th
+                    Dan), Goju Jiu-Jitsu (9th Dan), Shito-ryu Kenpo Karatedo
+                    (7th Dan), Seishin-ryu Kenpo Karatedo (7th Dan), and Karate
+                    Leaders Association (6th Dan). He is also a master in the
+                    All Japan Martial Arts Association, holds ranks in
+                    kickboxing (Sandan), Armor Karate (Sandan), WTF Taekwondo
+                    (1st Dan), and practices Okinawa Kobudo and various weapons.
+                    A former all-Japan kickboxing professional and mixed martial
+                    artist, he is dedicated to systematizing and passing on
+                    these techniques to future generations.
                   </p>
                 </div>
 
@@ -187,17 +188,17 @@ export default function HomePage() {
                   </p>
 
                   <p className="mb-4 text-xl text-justify">
-                    He has been practicing for more than 20 years at the Japan
-                    Karate-do Itosukai General Headquarters Dojo, and has also
-                    worked as a general headquarters master to guide younger
-                    generations and organize the dojo. In addition, he also
-                    launched a website dedicated to the General Headquarters,
-                    and operated it as a guard on the website, and although he
-                    has done his best for this school, he has been doing his
-                    best for this school, but in June 2017, he was fascinated by
-                    Okinawa Karate and Ryukyu Kobudo, and resigned from the
-                    General Headquarters of the Japan Karatedo Itosukai, which
-                    he had been indebted to for many years.
+                    He practiced for over 20 years at the Japan Karate-do
+                    Itosukai General Headquarters Dojo, guiding younger
+                    generations and managing the dojo's website. In June 2017,
+                    he left Itosukai, captivated by Okinawa Karate and Ryukyu
+                    Kobudo, drawn to the Okinawan teachers' inquisitive spirit
+                    and personality. While at Itosukai, he practiced at various
+                    dojos with permission from the Soke family and spent his
+                    free time on martial arts. With over 30 years of experience
+                    in karate and Ryukyu Kobudo, he originally sought to learn
+                    Ryukyu Kobudo but found the right teacher through Okinawa
+                    Uechi-ryu Karatedo, leading to regular training in Okinawa.
                   </p>
                 </div>
 

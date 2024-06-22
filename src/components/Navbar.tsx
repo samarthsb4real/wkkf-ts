@@ -62,7 +62,7 @@ export default function Navbar2() {
               </details>
             </li>
             <li>
-              <Link className="text-white" href="/notice">Notice</Link>
+              <Link className="text-white" href="/gallery">Gallery</Link>
             </li>
             <li>
               <details className="w-50">
