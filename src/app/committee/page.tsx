@@ -17,6 +17,7 @@ const BoardMembersPage = () => {
     },
   ];
   const srCouncil = [
+    
     {
       id: 1,
       name: "Aniket Vivek Kawalkar",
@@ -69,6 +70,7 @@ const BoardMembersPage = () => {
       position: "Treasurer",
       image: "members/931 CA Hindavi Dhimate Shodan Black Belt Treasurer.jpg",
     },
+    
   ];
 
   const astCouncil = [
