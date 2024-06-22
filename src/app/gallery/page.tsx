@@ -19,7 +19,7 @@ const cards = [
     id: 3,
     content: "Content 3",
     className: "md:col-span-1",
-    thumbnail: "/gallery/11.jpg",
+    thumbnail: "/gallery/11.JPG",
   },
   {
     id: 4,
@@ -31,25 +31,13 @@ const cards = [
     id: 5,
     content: "Content 5",
     className: "md:col-span-1 h-64",
-    thumbnail: "/gallery/9.jpg",
+    thumbnail: "/gallery/9.JPG",
   },
   {
     id: 6,
     content: "Content 6",
     className: "md:col-span-1",
     thumbnail: "/gallery/6.jpg",
-  },
-  {
-    id: 7,
-    content: "Content 7",
-    className: "md:col-span-1",
-    thumbnail: "/gallery/7.jpg",
-  },
-  {
-    id: 8,
-    content: "Content 8",
-    className: "md:col-span-1",
-    thumbnail: "/gallery/8.jpg",
   },
 ];
 
