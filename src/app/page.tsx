@@ -32,29 +32,29 @@ const testimonials = [
   {
     quote:
       "As the founder of the World Karate and Kobudo Federation, my vision was to create an organization that not only teaches martial arts but also fosters a global community dedicated to the principles of discipline, respect, and excellence",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    name: "— Shihan Mangesh Dhimate",
+    title: "Founder",
   },
 
   {
     quote:
       "Serving as the chairman of the World Karate and Kobudo Federation has been a profound honor. Our commitment to high standards in training, competition, and cultural preservation is unwavering",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    name: "— Sensei Aniket Kawalkar",
+    title: "Chairman",
   },
 
   {
     quote:
       "Serving as the Vice Chairman and Technical Director of WKK has been an incredible journey. Our commitment to excellence in the core conceptual aspects of martial arts has set us apart as a leading organization in the field, & It is an honor to work alongside such dedicated individuals who share a passion for Karate and Kobudo, and I am excited about the future we are building together",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    name: "— Sensei Avdhut Shelar",
+    title: "Vice Chairman & Technical Director",
   },
 
   {
     quote:
       "As the founder of the World Karate and Kobudo Federation, my vision was to create an organization that not only teaches martial arts but also fosters a global community dedicated to the principles of discipline, respect, and excellence",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    name: "— Sensei Abhijit Gaikwad",
+    title: "Secretary",
   },
 ];
 

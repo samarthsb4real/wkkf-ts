@@ -152,14 +152,14 @@ export default function Chairman() {
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
                 <p className="mb-4">
-                  "In my role as secretary, I am constantly reminded of the
+                  In my role as secretary, I am constantly reminded of the
                   positive impact our federation has on individuals and
                   communities globally. Our administrative team works tirelessly
                   to ensure seamless operations, allowing our instructors and
                   students to focus on their training and development. The World
                   Karate and Kobudo Federation stands as a testament to what can
                   be achieved when we work together towards a common goal of
-                  excellence and cultural preservation."
+                  excellence and cultural preservation.
                 </p>
                 <p>
                   <span className="font-semibold">
