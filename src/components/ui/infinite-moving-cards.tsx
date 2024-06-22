@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { cn } from "@/utils/cn";
@@ -15,7 +16,7 @@ export const InfiniteMovingCards = ({
     name: string;
     title: string;
   }[];
-  direction?: "left" | "right";
+  direction?: "right" | "left";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
@@ -45,7 +46,7 @@ export const InfiniteMovingCards = ({
   }
   const getDirection = () => {
     if (containerRef.current) {
-      if (direction === "left") {
+      if (direction === "right") {
         containerRef.current.style.setProperty(
           "--animation-direction",
           "forwards"
