@@ -24,15 +24,13 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
           <strong>Longitude:</strong> {lng}
         </div>
         <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur justo nec nisl ullamcorper, sit amet pretium felis
-          ultricies.
+          Tulsi Vihar, Near Railway Station, Asangaon (East)
         </p>
       </div>
       {/* Right side: Map */}
       <div className="w-full md:w-1/2 relative h-64 md:h-auto">
         <iframe
-          src={mapSrc}
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6161027790941!2d73.3102365!3d19.435533899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be78500709ca42b%3A0x542f2b8eef45fe8f!2sWorld%20Karate%20%26%20Kobudo%20Federation%20Headquarter.!5e0!3m2!1sen!2sin!4v1719022219460!5m2!1sen!2sin"
           width="100%"
           height="100%"
           loading="lazy"

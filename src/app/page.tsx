@@ -130,9 +130,9 @@ export default function HomePage () {
 
         <div className="flex justify-center items-center bg-gray-900 py-8">
           <MapBanner
-            address="123 Main St, Springfield, USA"
-            lat={37.7749} // Example latitude
-            lng={-122.4194} // Example longitude
+            address="Tulsi Vihar, Asangaon, Maharashtra 421601"
+            lat={19.4356443857464} // Example latitude
+            lng={73.31021615181228} // Example longitude
           />
         </div>
       </div>

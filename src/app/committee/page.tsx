@@ -10,7 +10,7 @@ const BoardMembersPage = () => {
     {
         id: 1,
         name: "Mangesh Rangnath Dhimte",
-        rank: "4th Dan Black Belt",
+        rank: "5th Dan Black Belt",
         position: "Founder & Advisor",
         image:
           "members/a1 Founder & Advisor Mangesh Rangnath Dhimte 4th Dan Black Belt.jpg",
@@ -30,7 +30,7 @@ const BoardMembersPage = () => {
       id: 3,
       name: "Avdhut Madhukar Shelar",
       rank: "4th Dan Black Belt",
-      position: "Vice Chairman & Technical Director",
+      position: "Vice Chairman",
       image:
         "members/6 Avdhut Madhukar Shelar (4th Dan Black Belt) Technical Director.JPG",
     },
@@ -48,16 +48,27 @@ const BoardMembersPage = () => {
     {
       id: 4,
       name: "Nupur Mangesh Dhimte",
-      position: "Technical Director",
-      rank: "3rd Dan Black Belt",
+      position: "Joint Secretary & Technical Director",
+      rank: "2nd Dan Black Belt",
       image:
         "members/7 Nupur Mangesh Dhimte (3rd Dan Black Belt) Technical Director.jpg",
     },
+
+
     {
       id: 5,
-      name: "Sakshi Jitendra Khambayat",
+      name: "Aniruddh Singh",
       rank: "2nd Dan Black Belt",
-      position: "Assistant Administrator",
+      position: "Secretary",
+      image:
+        "members/43 Aniruddh Singh 2nd Dan Black Belt General Seceratory.jpeg",
+    },
+
+    {
+      id: 7,
+      name: "Hindavi Dhimate (C.A)",
+      rank: "Shodan Black Belt",
+      position: "Treasurer",
       image:
         "members/42 Sakshi Jitendra Khambayat (2nd Dan Black Belt) Asst Administrator.JPG",
     },
@@ -70,14 +81,6 @@ const BoardMembersPage = () => {
         "members/42 Siddhi Borker 2nd Dan Black Belt                   Addl Treasurer & Administrator.png",
     },
 
-    {
-      id: 7,
-      name: "Aniruddh Singh",
-      rank: "4th Dan Black Belt",
-      position: "General Secretary",
-      image:
-        "members/43 Aniruddh Singh 2nd Dan Black Belt General Seceratory.jpeg",
-    },
     {
       id: 8,
       name: "Upasna Bhaskar Dingore",
