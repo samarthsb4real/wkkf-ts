@@ -130,7 +130,7 @@ const BoardMembersPage = () => {
       position: "2nd Dan Black Belt",
       rank: "",
       image:
-        "members/43 Upasna Bhaskar Dingore (2nd Dan Black Belt) Asst Tech Director.jpg",
+        "members/43 Upasna Bhaskar Dingore (2nd Dan Black Belt) Asst Tech Director.JPG",
     },
 
     {
@@ -139,7 +139,7 @@ const BoardMembersPage = () => {
       position: "2nd Dan Black Belt",
       rank: "",
       image:
-        "members/46 Jidnyesh Dinesh Harad 2nd Dan Black Belt Asst Tech Director Kobudo.jpg",
+        "members/46 Jidnyesh Dinesh Harad 2nd Dan Black Belt Asst Tech Director Kobudo.JPG",
     },
   ];
 
