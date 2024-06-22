@@ -100,7 +100,7 @@ export default function Chairman() {
               <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
                 <img
                   src="/council/chairman cf.jpg"
-                  alt="founder"
+                  alt="chairman"
                   className="rounded-3xl border w-2/3"
                 />
               </div>
@@ -135,7 +135,7 @@ export default function Chairman() {
               <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
                 <img
                   src="/council/vc cf.jpg"
-                  alt="founder"
+                  alt="vc"
                   className="rounded-3xl border w-2/3"
                 />
               </div>
@@ -169,7 +169,7 @@ export default function Chairman() {
               <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
                 <img
                   src="/council/gs cf.jpg"
-                  alt="founder"
+                  alt="gs"
                   className="rounded-3xl border w-2/3"
                 />
               </div>

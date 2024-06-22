@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -20,11 +21,13 @@ const projects = [
     description:
       "Teaching Self-defense techniques and creating a beautiful mind",
     link: "https://fumonkaikawasaki.wixsite.com/fumonkai-karate",
+    logo: "logo/ifkf.jpg",
   },
   {
     title: "Okinawan Karate and Ryukyu Ancient Martial Arts",
     description: "Association to learn Ryukyu Martial Arts and Ryusyu-kai",
     link: "https://ryusyu-kai.qwc.jp/",
+    logo: "logo/kobudo.jpg",
   },
 ];
 
@@ -119,18 +122,98 @@ export default function HomePage() {
         )}
 
         <div className="max-w-full mx-auto mt-12 md:px-8 ">
-          <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          <motion.p className="font-bold text-2xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Our Associates
           </motion.p>
-          <HoverEffect items={projects} />
-          <StickyScroll content={content} />
+
+          <div className="flex">
+            <HoverEffect items={projects} />
+          </div>
+
+          <motion.p className="font-bold text-lg sm:text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-8">
+            Masters
+            <br />
+          </motion.p>
+
+          <div className="rounded-2xl overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
+            <div className="w-full p-8 flex flex-col items-center">
+              <div className="flex flex-col md:flex-row items-center md:items-start m-8">
+                <div className="w-full md:w-3/4 text-center md:text-left  ">
+                  <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-4">
+                    Shihan Syuken Hattori
+                  </h1>
+                  <p className="font-semibold text-gray-400 text-3xl mb-6">
+                    International Fumonkai Karatedo Federation
+                  </p>
+
+                  <p className="mb-4 text-xl text-justify">
+                    He has been familiar with martial arts since he was a child
+                    and has experienced various martial arts and martial arts
+                    including traditional karate. ・ Aiki Martial Arts (9th Dan)
+                    ・ Goju Jiu-Jitsu (9th Dan) ・ Shito-ryu Kenpo Karatedo (7th
+                    Dan / Master) ・ Seishin-ryu Kenpo Karatedo (7th Dan) ・
+                    Karate Leaders Association Master (6th Dan). All Japan
+                    Martial Arts Association Master, Kickboxing Self-Defense
+                    (Sandan), Armor Karate (Sandan), WTF Taekwondo (1st Stage),
+                    Okinawa Kobudo (Preservation Society), Weapons (Canes,
+                    Wooden Swords, Guards, Knives) Kickboxing (former all-Japan
+                    kick professional player), mixed martial arts (full contact
+                    comprehensive karate system) We are energetically continuing
+                    activities to systematize and compile those techniques and
+                    techniques and pass them on to future generations.
+                  </p>
+                </div>
+
+                <div className="md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
+                  <img
+                    src="/master-1.jpg"
+                    alt="founder"
+                    className="rounded-3xl border w-2/3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="my-8 rounded-2xl overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
+            <div className="w-full p-8 flex flex-col items-center">
+              <div className="flex flex-col md:flex-row items-center md:items-start m-8">
+                <div className="w-full md:w-3/4 text-center md:text-left  ">
+                  <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-4">
+                    Sensei Takeyuki Endo
+                  </h1>
+                  <p className="font-semibold text-gray-400 text-3xl mb-6">
+                    Okinawan Karate and Ryukyu Ancient Martial Arts
+                  </p>
+
+                  <p className="mb-4 text-xl text-justify">
+                    He has been practicing for more than 20 years at the Japan
+                    Karate-do Itosukai General Headquarters Dojo, and has also
+                    worked as a general headquarters master to guide younger
+                    generations and organize the dojo. In addition, he also
+                    launched a website dedicated to the General Headquarters,
+                    and operated it as a guard on the website, and although he
+                    has done his best for this school, he has been doing his
+                    best for this school, but in June 2017, he was fascinated by
+                    Okinawa Karate and Ryukyu Kobudo, and resigned from the
+                    General Headquarters of the Japan Karatedo Itosukai, which
+                    he had been indebted to for many years.
+                  </p>
+                </div>
+
+                <div className="md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
+                  <img
+                    src="/master-2.jpg"
+                    alt="founder"
+                    className="rounded-3xl border w-2/3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
-          <StickyScroll content={content} />
-        </div>
-
-        <div className="min-h-screen rounded-md flex flex-col antialiased bg-black-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden p-4 md:p-8">
+        <div className="rounded-md flex flex-col antialiased bg-black-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden p-4 md:p-8">
           <motion.p className="font-bold text-lg sm:text-xl md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Testimonials
             <br />
