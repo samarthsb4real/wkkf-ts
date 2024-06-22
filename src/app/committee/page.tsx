@@ -67,26 +67,7 @@ const BoardMembersPage = () => {
       name: "Hindavi Dhimate (C.A)",
       rank: "Shodan Black Belt",
       position: "Treasurer",
-      image:
-        "members/42 Sakshi Jitendra Khambayat (2nd Dan Black Belt) Asst Administrator.JPG",
-    },
-
-    {
-      id: 8,
-      name: "Upasna Bhaskar Dingore",
-      position: "Assistant Administrator & Assistant Technical Director",
-      rank: "2nd Dan Black Belt",
-      image:
-        "members/43 Upasna Bhaskar Dingore (2nd Dan Black Belt) Asst Tech Director.jpg",
-    },
-
-    {
-      id: 10,
-      name: "Jidnyesh Dinesh Harad",
-      position: "Assistant Administrator & Assistant Technical Director",
-      rank: "2nd Dan Black Belt",
-      image:
-        "members/46 Jidnyesh Dinesh Harad 2nd Dan Black Belt Asst Tech Director Kobudo.jpg",
+      image: "members/931 CA Hindavi Dhimate Shodan Black Belt Treasurer.jpg",
     },
   ];
 
@@ -123,8 +104,7 @@ const BoardMembersPage = () => {
       name: "Anjali Rajendra Bangar",
       rank: "2nd Dan Black Belt",
       position: "Assistant Technical Director",
-      image:
-        "members/922 Anjal Rajendra Bangar Shodan Black Belt.JPG",
+      image: "members/922 Anjal Rajendra Bangar Shodan Black Belt.JPG",
     },
 
     {
@@ -141,8 +121,24 @@ const BoardMembersPage = () => {
       name: "Laxmi Vishwakarma",
       rank: "2nd Dan Black Belt",
       position: "Assistant Technical Director",
+      image: "members/940 Laxmi Vishwakarma Shodan Black Belt.jpg",
+    },
+    {
+      id: 8,
+      name: "Upasna Bhaskar Dingore",
+      position: "Assistant Administrator & Assistant Technical Director",
+      rank: "2nd Dan Black Belt",
       image:
-        "members/940 Laxmi Vishwakarma Shodan Black Belt.jpg",
+        "members/43 Upasna Bhaskar Dingore (2nd Dan Black Belt) Asst Tech Director.jpg",
+    },
+
+    {
+      id: 10,
+      name: "Jidnyesh Dinesh Harad",
+      position: "Assistant Administrator & Assistant Technical Director",
+      rank: "2nd Dan Black Belt",
+      image:
+        "members/46 Jidnyesh Dinesh Harad 2nd Dan Black Belt Asst Tech Director Kobudo.jpg",
     },
   ];
 
@@ -191,10 +187,10 @@ const BoardMembersPage = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
@@ -218,10 +214,10 @@ const BoardMembersPage = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
@@ -245,10 +241,10 @@ const BoardMembersPage = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
@@ -272,10 +268,10 @@ const BoardMembersPage = () => {
               <h2 className="text-xl md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-xs md:text-md text-gray-500">{member.rank}</p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
