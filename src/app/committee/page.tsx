@@ -183,7 +183,6 @@ const BoardMembersPage = () => {
       rank: "Doctrate in Education and Humanity",
     },
 
-
     {
       id: 4,
       name: "Darshan Kawalkar",
@@ -193,31 +192,25 @@ const BoardMembersPage = () => {
     },
   ];
 
-
-
   const stateHead = [
     {
       id: 5,
-      name: "Sensei Sree Moorthi", 
+      name: "Sensei Sree Moorthi",
       position: "Kerala State In-Charge(2024)",
       image: "members/State head Kerala.jpg",
       rank: "",
-    }
-  ]
+    },
+  ];
 
   const distHead = [
     {
       id: 5,
-      name: "Sensei Sai Salunkhe", 
+      name: "Sensei Sai Salunkhe",
       position: "Thane In-Charge(2024)",
       image: "members/955 Sai Salunkhe Shodan Black Belt.jpg",
       rank: "",
-    }
-  ]
-
-
-
-
+    },
+  ];
 
   return (
     <div className="container mx-auto my-12 min-w-full px-4">
@@ -275,9 +268,6 @@ const BoardMembersPage = () => {
         ))}
       </div>
 
-
-
-
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         State Head
       </h1>
@@ -305,9 +295,6 @@ const BoardMembersPage = () => {
         ))}
       </div>
 
-
-
-      
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         District Head
       </h1>
@@ -335,8 +322,6 @@ const BoardMembersPage = () => {
         ))}
       </div>
 
-
-
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         Instructors
       </h1>
@@ -363,25 +348,6 @@ const BoardMembersPage = () => {
           </div>
         ))}
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         Management Committee

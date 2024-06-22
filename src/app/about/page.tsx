@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Chairman() {
   return (
     <div className="min-h-screen mt-4">
@@ -38,13 +39,13 @@ export default function Chairman() {
 
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
-          <div className="w-full p-8">
-            <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/2">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+          <div className="w-full p-8 flex flex-col items-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start">
+              <div className="w-full md:w-3/4 text-center md:text-left ">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4">
                   Shihan Mangesh Dhimte
                 </h1>
-                <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
+                <p className="font-semibold text-gray-400 text-3xl mb-6">
                   Founder
                 </p>
                 <p className="mb-4 text-lg text-justify">
@@ -60,11 +61,11 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl bg-red-600 flex items-center text-center text-white">
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
                 <img
                   src="/council/founder cf.jpg"
                   alt="founder"
-                  className="h-36"
+                  className="rounded-3xl border max-h-1/2"
                 />
               </div>
             </div>
