@@ -17,7 +17,6 @@ const BoardMembersPage = () => {
     },
   ];
   const srCouncil = [
-    
     {
       id: 1,
       name: "Aniket Vivek Kawalkar",
@@ -70,7 +69,6 @@ const BoardMembersPage = () => {
       position: "Treasurer",
       image: "members/931 CA Hindavi Dhimate Shodan Black Belt Treasurer.jpg",
     },
-    
   ];
 
   const astCouncil = [
@@ -147,25 +145,47 @@ const BoardMembersPage = () => {
   const advisors = [
     {
       id: 2,
-      name: "Jayesh Dilip Gaikwad",
-      position: "Advisor",
-      rank: "3rd Dan Black Belt",
-      image: "members/a2 Advisor Jayesh Dilip Gaikad 3rd Dan Black Belt.JPG",
+      name: "Sanjay Ramesh Mhaskar",
+      position: "Entrepreneur",
+      image: "members/a2 Advisor Sanjay Ramesh Mhaskar.jpg",
+      rank: ""
     },
 
     {
-      id: 3,
-      name: "Diksha Bhoir (Kor)",
-      rank: "Shodan Black Belt",
-      position: "Advisor",
-      image: "members/909 Diksha Bhoir (Kor) Shodan Black Belt B Tech Prof.JPG",
+      id: 4,
+      name: "Nitin Birari",
+      position: "Professor",
+      image: "members/a2 Advisor Prof Nitin Birari.jpg",
+      rank: ""
+    },
+
+    {
+      id: 4,
+      name: "Omkar Liye",
+      position: "Service",
+      image: "members/a2 Advisor Omkar Liye.jpg",
+      rank: ""
     },
     {
       id: 4,
-      name: "Dr. Deepali Shelavale",
-      position: "Advisor",
-      rank: "Shodan Black Belt",
-      image: "members/909 Dr. Deepali Shelavale Shodan Black Belt.jpeg",
+      name: "Dr. Shivani Jha",
+      position: "Professor",
+      image: "members/a2 Advisor Shivani Jha.jpg",
+      rank: ""    },
+    {
+      id: 4,
+      name: "Mahendra Dhimte",
+      position: "Professor",
+      image: "members/",
+      rank: ""
+    },
+
+    {
+      id: 4,
+      name: "Darshan Kawalkar",
+      position: "Entrepreneur",
+      image: "members/a2 Advisor Darshan Kawalkar.jpg",
+      rank: ""
     },
   ];
 
@@ -199,37 +219,10 @@ const BoardMembersPage = () => {
       </div>
 
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
-        Senior Council
+        Head Council
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {srCouncil.map((member) => (
-          <div
-            key={member.id}
-            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-32 md:w-42 h-48 md:h-56 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">
-                {member.name}
-              </h2>
-              <p className="text-sm md:text-lg text-gray-300">
-                {member.position}
-              </p>
-              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
-        Assistant Council
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
-        {astCouncil.map((member) => (
           <div
             key={member.id}
             className="flex border border-gray-300 items-center rounded-lg overflow-hidden"

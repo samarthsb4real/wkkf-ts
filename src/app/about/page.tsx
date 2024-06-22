@@ -39,14 +39,14 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-              Shihan Mangesh Dhimte
-            </h1>
-            <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
-              Founder
-            </p>
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+                  Shihan Mangesh Dhimte
+                </h1>
+                <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
+                  Founder
+                </p>
                 <p className="mb-4 text-lg text-justify">
                   It is with great pride and joy that I welcome you to the World
                   Karate and Kobudo Federation. When I founded this
@@ -60,8 +60,8 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl p-8 bg-red-600 flex items-center text-center text-white">
-                Photo
+              <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl bg-red-600 flex items-center text-center text-white">
+                <img src="/council/founder cf.jpg" alt="founder" className="h-36" />
               </div>
             </div>
           </div>
@@ -69,15 +69,14 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-              Sensei Aniket Kawalkar
-            </h1>
-            <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
-              Chairman
-            </p>
-
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+                  Sensei Aniket Kawalkar
+                </h1>
+                <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
+                  Chairman
+                </p>
                 <p className="mb-4 text-lg text-justify">
                   As Chairman of the World Karate and Kobudo Federation, I am
                   honored to see the remarkable growth and achievements of our
@@ -99,15 +98,14 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-              Sensei Avdhut Shelar
-            </h1>
-            <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
-              Vice Chairman & Technical Director
-            </p>
-
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+                  Sensei Avdhut Shelar
+                </h1>
+                <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
+                  Vice Chairman & Technical Director
+                </p>
                 <p className="mb-4 text-lg text-justify">
                   It is a privilege to serve as your Vice Chairman and Technical
                   Director. Our federation stands as a beacon of technical
@@ -130,15 +128,14 @@ export default function Chairman() {
           <div className="bg-gradient-to-r from-neutral via-neutral-300 to-neutral my-8 h-[1px] w-full" />
 
           <div className="w-full p-8">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
-              Sensei Abhijit Gaikwad
-            </h1>
-            <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
-              General Secretary
-            </p>
-
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 text-left">
+                  Sensei Abhijit Gaikwad
+                </h1>
+                <p className="font-semibold text-gray-400 text-3xl text-left mb-6">
+                  General Secretary
+                </p>
                 <p className="mb-4 text-lg text-justify">
                   In my role as secretary, I am constantly reminded of the
                   positive impact our federation has on individuals and

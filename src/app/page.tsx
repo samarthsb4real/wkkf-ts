@@ -51,7 +51,8 @@ const testimonials = [
   },
 
   {
-    quote: "In my role as secretary, I am constantly reminded of the positive impact our federation has on individuals and communities globally. Our administrative team works tirelessly to ensure seamless operations, allowing our instructors and students to focus on their training and development. The World Karate and Kobudo Federation stands as a testament to what can be achieved when we work together towards a common goal of excellence and cultural preservation.",
+    quote:
+      "In my role as secretary, I am constantly reminded of the positive impact our federation has on individuals and communities globally. Our administrative team works tirelessly to ensure seamless operations, allowing our instructors and students to focus on their training and development. The World Karate and Kobudo Federation stands as a testament to what can be achieved when we work together towards a common goal of excellence and cultural preservation.",
     name: "— Sensei Abhijit Gaikwad",
     title: "Secretary",
   },
@@ -117,6 +118,17 @@ export default function HomePage() {
           </ImagesSlider>
         )}
 
+        <div className="max-w-full mx-auto mt-12 md:px-8 ">
+          <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+            Our Associates
+          </motion.p>
+          <HoverEffect items={projects} />
+        </div>
+
+        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
+          <StickyScroll content={content} />
+        </div>
+
         <div className="min-h-screen rounded-md flex flex-col antialiased bg-black-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden p-4 md:p-8">
           <motion.p className="font-bold text-lg sm:text-xl md:text-4xl text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Testimonials
@@ -127,17 +139,6 @@ export default function HomePage() {
             direction="right"
             speed="slow"
           />
-        </div>
-
-        <div className="max-w-full mx-auto px-4 md:px-8 ">
-          <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-            Our Associates
-          </motion.p>
-          <HoverEffect items={projects} />
-        </div>
-
-        <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
-          <StickyScroll content={content} />
         </div>
 
         <div className="flex justify-center items-center bg-gray-900 py-8">

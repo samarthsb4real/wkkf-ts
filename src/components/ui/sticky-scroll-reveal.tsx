@@ -93,12 +93,12 @@ export const StickyScroll = ({
               )}
             </div>
           ))}
-          <div className="h-40" />
+          <div className="" />
         </div>
       </div>
       <div
         className={cn(
-          "hidden lg:block items-end h-80 w-1/3 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block items-end w-1/3 rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
