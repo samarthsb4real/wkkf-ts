@@ -190,9 +190,9 @@ export default function HomePage() {
                   <p className="mb-4 text-xl text-justify">
                     He practiced for over 20 years at the Japan Karate-do
                     Itosukai General Headquarters Dojo, guiding younger
-                    generations and managing the dojo's website. In June 2017,
+                    generations and managing the dojo&quot;s website. In June 2017,
                     he left Itosukai, captivated by Okinawa Karate and Ryukyu
-                    Kobudo, drawn to the Okinawan teachers' inquisitive spirit
+                    Kobudo, drawn to the Okinawan teachers&quot; inquisitive spirit
                     and personality. While at Itosukai, he practiced at various
                     dojos with permission from the Soke family and spent his
                     free time on martial arts. With over 30 years of experience
