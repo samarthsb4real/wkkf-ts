@@ -16,6 +16,7 @@ const BoardMembersPage = () => {
         "members/a1 Founder & Advisor Mangesh Rangnath Dhimte 4th Dan Black Belt.jpg",
     },
   ];
+
   const srCouncil = [
     {
       id: 1,
@@ -75,8 +76,8 @@ const BoardMembersPage = () => {
     {
       id: 5,
       name: "Sakshi Jitendra Khambayat",
-      rank: "2nd Dan Black Belt",
-      position: "Assistant Administrator",
+      rank: "",
+      position: "2nd Dan Black Belt",
       image:
         "members/42 Sakshi Jitendra Khambayat (2nd Dan Black Belt) Asst Administrator.JPG",
     },
@@ -84,8 +85,8 @@ const BoardMembersPage = () => {
     {
       id: 6,
       name: "Siddhi Borker",
-      position: "Additional Treasurer & Administrator",
-      rank: "2nd Dan Black Belt",
+      position: "2nd Dan Black Belt",
+      rank: "",
       image:
         "members/42 Siddhi Borker 2nd Dan Black Belt                   Addl Treasurer & Administrator.png",
     },
@@ -93,8 +94,8 @@ const BoardMembersPage = () => {
     {
       id: 9,
       name: "Shravani Patil",
-      rank: "2nd Dan Black Belt",
-      position: "Assistant Technical Director",
+      rank: "",
+      position: "2nd Dan Black Belt",
       image:
         "members/45 Shravani Patil (2nd Dan Black Belt) Asst Tech Director Kobudo.JPG",
     },
@@ -102,16 +103,16 @@ const BoardMembersPage = () => {
     {
       id: 11,
       name: "Anjali Rajendra Bangar",
-      rank: "2nd Dan Black Belt",
-      position: "Assistant Technical Director",
+      rank: "",
+      position: "2nd Dan Black Belt",
       image: "members/922 Anjal Rajendra Bangar Shodan Black Belt.JPG",
     },
 
     {
       id: 11,
       name: "Shouryani Pujari",
-      rank: "2nd Dan Black Belt",
-      position: "Assistant Technical Director",
+      rank: "",
+      position: "2nd Dan Black Belt",
       image:
         "members/47 Shouryani Pujari 2nd Dan Black Belt Asst Tech Director.JPG",
     },
@@ -119,15 +120,15 @@ const BoardMembersPage = () => {
     {
       id: 11,
       name: "Laxmi Vishwakarma",
-      rank: "2nd Dan Black Belt",
-      position: "Assistant Technical Director",
+      rank: "",
+      position: "2nd Dan Black Belt",
       image: "members/940 Laxmi Vishwakarma Shodan Black Belt.jpg",
     },
     {
       id: 8,
       name: "Upasna Bhaskar Dingore",
-      position: "Assistant Administrator & Assistant Technical Director",
-      rank: "2nd Dan Black Belt",
+      position: "2nd Dan Black Belt",
+      rank: "",
       image:
         "members/43 Upasna Bhaskar Dingore (2nd Dan Black Belt) Asst Tech Director.jpg",
     },
@@ -135,8 +136,8 @@ const BoardMembersPage = () => {
     {
       id: 10,
       name: "Jidnyesh Dinesh Harad",
-      position: "Assistant Administrator & Assistant Technical Director",
-      rank: "2nd Dan Black Belt",
+      position: "2nd Dan Black Belt",
+      rank: "",
       image:
         "members/46 Jidnyesh Dinesh Harad 2nd Dan Black Belt Asst Tech Director Kobudo.jpg",
     },
@@ -146,9 +147,17 @@ const BoardMembersPage = () => {
     {
       id: 2,
       name: "Sanjay Ramesh Mhaskar",
-      position: "Entrepreneur",
+      position: "Businessman",
       image: "members/a2 Advisor Sanjay Ramesh Mhaskar.jpg",
-      rank: ""
+      rank: "",
+    },
+
+    {
+      id: 4,
+      name: "Mahendra Dhimte",
+      position: "Education Officer",
+      image: "members/a2 Advisor Mahendra Dhimte.jpg",
+      rank: "",
     },
 
     {
@@ -156,41 +165,62 @@ const BoardMembersPage = () => {
       name: "Nitin Birari",
       position: "Professor",
       image: "members/a2 Advisor Prof Nitin Birari.jpg",
-      rank: ""
+      rank: "",
     },
 
     {
       id: 4,
       name: "Omkar Liye",
-      position: "Service",
+      position: "Businessman",
       image: "members/a2 Advisor Omkar Liye.jpg",
-      rank: ""
+      rank: "",
     },
     {
       id: 4,
       name: "Dr. Shivani Jha",
-      position: "Professor",
+      position: "Principal",
       image: "members/a2 Advisor Shivani Jha.jpg",
-      rank: ""    },
-    {
-      id: 4,
-      name: "Mahendra Dhimte",
-      position: "Professor",
-      image: "members/",
-      rank: ""
+      rank: "Doctrate in Education and Humanity",
     },
+
 
     {
       id: 4,
       name: "Darshan Kawalkar",
-      position: "Entrepreneur",
+      position: "Businessman",
       image: "members/a2 Advisor Darshan Kawalkar.jpg",
-      rank: ""
+      rank: "",
     },
   ];
 
+
+
+  const stateHead = [
+    {
+      id: 5,
+      name: "Sensei Sree Moorthi", 
+      position: "Kerala State In-Charge(2024)",
+      image: "members/State head Kerala.jpg",
+      rank: "",
+    }
+  ]
+
+  const distHead = [
+    {
+      id: 5,
+      name: "Sensei Sai Salunkhe", 
+      position: "Thane In-Charge(2024)",
+      image: "members/955 Sai Salunkhe Shodan Black Belt.jpg",
+      rank: "",
+    }
+  ]
+
+
+
+
+
   return (
-    <div className="container mx-auto my-12 min-w-full px-4 py-8">
+    <div className="container mx-auto my-12 min-w-full px-4">
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         Founder
       </h1>
@@ -212,7 +242,7 @@ const BoardMembersPage = () => {
               <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
+              <p className="text-lg md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
@@ -239,14 +269,122 @@ const BoardMembersPage = () => {
               <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
+              <p className="text-lg md:text-md text-gray-400">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+
+
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
+        State Head
+      </h1>
+      <div className="grid w-full justify-center gap-8 p-8">
+        {stateHead.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {member.name}
+              </h2>
+              <p className="text-sm md:text-lg text-gray-300">
+                {member.position}
+              </p>
               <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
       </div>
 
+
+
+      
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
-        Advisors
+        District Head
+      </h1>
+      <div className="grid w-full justify-center gap-8 p-8">
+        {distHead.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {member.name}
+              </h2>
+              <p className="text-sm md:text-lg text-gray-300">
+                {member.position}
+              </p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
+        Instructors
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+        {astCouncil.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {member.name}
+              </h2>
+              <p className="text-sm md:text-lg text-gray-300">
+                {member.position}
+              </p>
+              <p className="text-xs md:text-md text-gray-400">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
+        Management Committee
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {advisors.map((member) => (

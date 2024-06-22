@@ -61,7 +61,11 @@ export default function Chairman() {
               </div>
 
               <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-16 justify-center rounded-xl bg-red-600 flex items-center text-center text-white">
-                <img src="/council/founder cf.jpg" alt="founder" className="h-36" />
+                <img
+                  src="/council/founder cf.jpg"
+                  alt="founder"
+                  className="h-36"
+                />
               </div>
             </div>
           </div>

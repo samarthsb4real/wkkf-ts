@@ -71,9 +71,9 @@ const content = [
     image: "/master-1.jpg",
   },
   {
-    title: "TAKEYUKI ENFO",
+    title: "TAKEYUKI ENDO",
     description: `
-      Takeyuki Enfo, a distinguished teacher of Ryukyu Kudo. 
+      Takeyuki Endo, a distinguished teacher of Ryukyu Kudo. 
       Awarded the rank of Ryo Akamine in 1999 while enrolled in the Ryukyu
       Kudo Conservation Society. 
       Played a significant role in the association, collaborating closely with
@@ -123,6 +123,7 @@ export default function HomePage() {
             Our Associates
           </motion.p>
           <HoverEffect items={projects} />
+          <StickyScroll content={content} />
         </div>
 
         <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
