@@ -31,15 +31,30 @@ const projects = [
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      "As the founder of the World Karate and Kobudo Federation, my vision was to create an organization that not only teaches martial arts but also fosters a global community dedicated to the principles of discipline, respect, and excellence",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
   },
+
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      "Serving as the chairman of the World Karate and Kobudo Federation has been a profound honor. Our commitment to high standards in training, competition, and cultural preservation is unwavering",
     name: "William Shakespeare",
     title: "Hamlet",
+  },
+
+  {
+    quote:
+      "Serving as the Vice Chairman and Technical Director of WKK has been an incredible journey. Our commitment to excellence in the core conceptual aspects of martial arts has set us apart as a leading organization in the field, & It is an honor to work alongside such dedicated individuals who share a passion for Karate and Kobudo, and I am excited about the future we are building together",
+    name: "William Shakespeare",
+    title: "Hamlet",
+  },
+
+  {
+    quote:
+      "As the founder of the World Karate and Kobudo Federation, my vision was to create an organization that not only teaches martial arts but also fosters a global community dedicated to the principles of discipline, respect, and excellence",
+    name: "Charles Dickens",
+    title: "A Tale of Two Cities",
   },
 ];
 
@@ -71,7 +86,7 @@ const content = [
   },
 ];
 
-export default function HomePage () {
+export default function HomePage() {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -123,9 +138,7 @@ export default function HomePage () {
         </div>
 
         <div className="m-4 md:m-12 rounded-2xl p-4 md:p-8 overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
-          <StickyScroll
-            content={content}
-           />
+          <StickyScroll content={content} />
         </div>
 
         <div className="flex justify-center items-center bg-gray-900 py-8">
@@ -138,5 +151,4 @@ export default function HomePage () {
       </div>
     </NextUIProvider>
   );
-};
-
+}
