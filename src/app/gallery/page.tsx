@@ -2,14 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
-export function LayoutGridDemo() {
-  return (
-    <div className="min-h-screen py-12 w-full">
-      <LayoutGrid cards={cards} />
-    </div>
-  );
-}
-
 const cards = [
   {
     id: 1,
@@ -44,4 +36,10 @@ const cards = [
   },
 ];
 
-export default LayoutGridDemo;
+export default function Gallery() {
+  return (
+    <div className="min-h-screen py-12 w-full">
+      <LayoutGrid cards={cards} />
+    </div>
+  );
+}
