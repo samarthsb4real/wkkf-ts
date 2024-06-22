@@ -38,7 +38,7 @@ const cards = [
 
 export default function Gallery() {
   return (
-    <div className="min-h-screen py-12 w-full">
+    <div className="h-screen py-12 w-full">
       <LayoutGrid cards={cards} />
     </div>
   );
