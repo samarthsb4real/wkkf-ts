@@ -84,15 +84,14 @@ export default function Chairman() {
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2">
                 <p className="mb-4">
-                  It is a privilege to serve as your Vice Chairman and Technical
-                  Director. Our federation stands as a beacon of technical
-                  excellence and cultural preservation in the martial arts
-                  world. Your passion and dedication are instrumental in
-                  maintaining the high standards we set for ourselves. Whether
-                  you are a student, instructor, or competitor, your efforts
-                  contribute to the vibrant and dynamic community we have built.
-                  I am excited to continue working together to push the
-                  boundaries of what we can achieve.
+                  As Chairman of the World Karate and Kobudo Federation, I am
+                  honored to see the remarkable growth and achievements of our
+                  community. Your commitment to the principles of discipline,
+                  respect, and excellence drives our organization forward. We
+                  are dedicated to providing you with the best training,
+                  resources, and opportunities to excel. Your hard work and
+                  dedication inspire us all, and I look forward to what we will
+                  accomplish together.
                 </p>
                 <p>
                   <span className="font-semibold">

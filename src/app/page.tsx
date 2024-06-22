@@ -51,8 +51,7 @@ const testimonials = [
   },
 
   {
-    quote:
-      "As the founder of the World Karate and Kobudo Federation, my vision was to create an organization that not only teaches martial arts but also fosters a global community dedicated to the principles of discipline, respect, and excellence",
+    quote: "In my role as secretary, I am constantly reminded of the positive impact our federation has on individuals and communities globally. Our administrative team works tirelessly to ensure seamless operations, allowing our instructors and students to focus on their training and development. The World Karate and Kobudo Federation stands as a testament to what can be achieved when we work together towards a common goal of excellence and cultural preservation.",
     name: "— Sensei Abhijit Gaikwad",
     title: "Secretary",
   },
