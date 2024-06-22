@@ -21,6 +21,8 @@ export default function Navbar2() {
     { label: "Register As a Student", href: "/register/student" },
     { label: "Register As a Mentor", href: "/register/mentor" },
     { label: "Dojo Registration", href: "/register/dojo" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Qualified Members", href: "/qualified-members" },
   ];
 
   return (
