@@ -144,16 +144,13 @@ const BoardMembersPage = () => {
   ];
 
   const advisors = [
-
     {
-      id: 4,
-      name: "Dr. Shivani Jha",
-      position: "Principal",
-      image: "members/a2 Advisor Shivani Jha.jpg",
-      rank: "Doctrate in Education and Humanity",
+      id: 2,
+      name: "Sanjay Ramesh Mhaskar",
+      position: "Businessman",
+      image: "members/a2 Advisor Sanjay Ramesh Mhaskar.jpg",
+      rank: "",
     },
-
-   
     {
       id: 4,
       name: "Nitin Birari",
@@ -169,15 +166,14 @@ const BoardMembersPage = () => {
       rank: "",
     },
 
-
     {
-      id: 2,
-      name: "Sanjay Ramesh Mhaskar",
-      position: "Businessman",
-      image: "members/a2 Advisor Sanjay Ramesh Mhaskar.jpg",
-      rank: "",
+      id: 4,
+      name: "Dr. Shivani Jha",
+      position: "Principal",
+      image: "members/a2 Advisor Shivani Jha.jpg",
+      rank: "Doctrate in Education and Humanity",
     },
-    
+
     {
       id: 4,
       name: "Omkar Liye",

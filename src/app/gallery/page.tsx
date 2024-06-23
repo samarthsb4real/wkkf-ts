@@ -63,6 +63,20 @@ const cards = [
     className: "col-span-1 h-64 w-full",
     thumbnail: "/gallery/13.jpg",
   },
+  
+  
+  {
+    id: 13,
+    className: "col-span-1 h-64 w-full",
+    thumbnail: "/gallery/15.jpg",
+  },
+  
+  {
+    id: 14,
+    className: "col-span-1 h-64 w-full",
+    thumbnail: "/gallery/14.jpg",
+  },
+
 ];
 
 export default function Gallery() {
