@@ -13,6 +13,7 @@ const images = [
   "logo-hdr.jpg",
   "ss/3.jpg",
   "ss/5.jpg",
+  "ss/4.jpg",
   "ss/2.jpg",
   "ss/9.jpg",
   "ss/6.jpg",
@@ -103,7 +104,7 @@ export default function HomePage() {
 
   return (
     <NextUIProvider>
-      <div className="no-visible-scrollbar bg-black" >
+      <div className="no-visible-scrollbar bg-black">
         {isMounted && (
           <ImagesSlider className="min-h-screen" images={images}>
             <motion.div
@@ -181,7 +182,7 @@ export default function HomePage() {
             <div className="w-full p-8 flex flex-col items-center text-white">
               <div className="flex flex-col md:flex-row items-center md:items-start m-8">
                 <div className="w-full md:w-3/4 text-center md:text-left  ">
-                <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
+                  <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                     Sensei Takeyuki Endo
                   </h1>
                   <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
@@ -189,17 +190,15 @@ export default function HomePage() {
                   </p>
 
                   <p className="mb-4 text-sm md:text-xl text-justify text-white">
-                    He practiced for over 20 years at the Japan Karate-do
-                    Itosukai General Headquarters Dojo, guiding younger
-                    generations and managing the dojo&quot;s website. In June 2017,
-                    he left Itosukai, captivated by Okinawa Karate and Ryukyu
-                    Kobudo, drawn to the Okinawan teachers&quot; inquisitive spirit
-                    and personality. While at Itosukai, he practiced at various
-                    dojos with permission from the Soke family and spent his
-                    free time on martial arts. With over 30 years of experience
-                    in karate and Ryukyu Kobudo, he originally sought to learn
-                    Ryukyu Kobudo but found the right teacher through Okinawa
-                    Uechi-ryu Karatedo, leading to regular training in Okinawa.
+                    He was involved in the revival of Ryukyu Kobudo at the
+                    Nippon Karate-do Itosu-kai Headquarters Dojo and taught at
+                    the association. He then left Itosu-kai and studied Ryukyu
+                    Kobudo in Okinawa, the home of karate and Ryukyu Kobudo.
+                    After many years of training under Okinawan samurai and
+                    master of Ryukyu Kobudo, Kosuke Yonamine, he was ordered to
+                    go independent in November 2021 and founded Ryushu-kai. He
+                    is a high-ranking practitioner of karate, including
+                    Itosu-ryu, Uechi-ryu, Kobayashi-ryu, and Goju-ryu.
                   </p>
                 </div>
 

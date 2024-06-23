@@ -151,7 +151,13 @@ const BoardMembersPage = () => {
       image: "members/a2 Advisor Sanjay Ramesh Mhaskar.jpg",
       rank: "",
     },
-
+    {
+      id: 4,
+      name: "Nitin Birari",
+      position: "Professor",
+      image: "members/a2 Advisor Prof Nitin Birari.jpg",
+      rank: "",
+    },
     {
       id: 4,
       name: "Mahendra Dhimte",
@@ -160,12 +166,14 @@ const BoardMembersPage = () => {
       rank: "",
     },
 
+
+
     {
       id: 4,
-      name: "Nitin Birari",
-      position: "Professor",
-      image: "members/a2 Advisor Prof Nitin Birari.jpg",
-      rank: "",
+      name: "Dr. Shivani Jha",
+      position: "Principal",
+      image: "members/a2 Advisor Shivani Jha.jpg",
+      rank: "Doctrate in Education and Humanity",
     },
 
     {
@@ -175,13 +183,7 @@ const BoardMembersPage = () => {
       image: "members/a2 Advisor Omkar Liye.jpg",
       rank: "",
     },
-    {
-      id: 4,
-      name: "Dr. Shivani Jha",
-      position: "Principal",
-      image: "members/a2 Advisor Shivani Jha.jpg",
-      rank: "Doctrate in Education and Humanity",
-    },
+  
 
     {
       id: 4,
@@ -209,6 +211,23 @@ const BoardMembersPage = () => {
       position: "Thane In-Charge(2024)",
       image: "members/955 Sai Salunkhe Shodan Black Belt.jpg",
       rank: "",
+    },
+  ];
+
+  const intCollab = [
+    {
+      id: 1,
+      name: "Shihan Nimal Kalupahana",
+      position: "President IFKF Srilanka",
+      rank: "7th dan SLKF",
+      image: "members/Shihan Nimal Kalupahana.jpg",
+    },
+    {
+      id: 2,
+      name: "Sensei Sandali Wijesinghe",
+      position: "Secretary IFKF Srilanka",
+      rank: "2nd Dan Fumonkai Karate Federation",
+      image: "members/Sensei Sandali Wijesinghe.jpg",
     },
   ];
 
@@ -246,6 +265,33 @@ const BoardMembersPage = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {srCouncil.map((member) => (
+          <div
+            key={member.id}
+            className="flex border border-gray-300 items-center rounded-lg overflow-hidden"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-32 md:w-42 h-48 md:h-56 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {member.name}
+              </h2>
+              <p className="text-sm md:text-lg text-gray-300">
+                {member.position}
+              </p>
+              <p className="text-lg md:text-md text-gray-400">{member.rank}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
+        International Collaborations
+      </h1>
+      <div className="grid md:grid-cols-2 justify-center gap-8 p-8">
+        {intCollab.map((member) => (
           <div
             key={member.id}
             className="flex border border-gray-300 items-center rounded-lg overflow-hidden"

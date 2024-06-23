@@ -6,7 +6,6 @@ import Image from "next/image";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
 };
@@ -88,23 +87,6 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         }}
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
       />
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 100,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-        }}
-        className="relative px-8 pb-4 z-[70]"
-      >
-        {selected?.content}
-      </motion.div>
     </div>
   );
 };
