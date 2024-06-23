@@ -16,7 +16,7 @@ const cards = [
   {
     id: 3,
     className: "col-span-1 h-64",
-    thumbnail: "/gallery/10.JPG",
+    thumbnail: "/gallery/10.jpg",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const cards = [
   {
     id: 9,
     className: "md:col-span-1 h-64",
-    thumbnail: "/gallery/5.JPG",
+    thumbnail: "/gallery/5.jpg",
   },
   {
     id: 10,
@@ -56,7 +56,7 @@ const cards = [
   {
     id: 11,
     className: "col-span-1 h-64",
-    thumbnail: "/gallery/12.JPG",
+    thumbnail: "/gallery/12.jpg",
   },
   {
     id: 12,
