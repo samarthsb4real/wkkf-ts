@@ -49,7 +49,7 @@ const BoardMembersPage = () => {
       id: 4,
       name: "Nupur Mangesh Dhimte",
       position: "Joint Secretary & Technical Director",
-      rank: "2nd Dan Black Belt",
+      rank: "3rd Dan Black Belt",
       image:
         "members/7 Nupur Mangesh Dhimte (3rd Dan Black Belt) Technical Director.jpg",
     },

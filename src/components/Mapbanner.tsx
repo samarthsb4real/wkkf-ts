@@ -36,7 +36,7 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
           width="100%"
           height="100%"
           loading="lazy"
-          className="absolute inset-0 border-0 rounded-b-xl md:rounded-r-xl md:rounded-bl-none"
+          className="absolute inset-0 border-0 rounded-2xl md:rounded-r-xl md:rounded-bl-none"
           title="Google Maps"
         ></iframe>
       </div>

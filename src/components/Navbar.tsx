@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-"use client"
+"use client";
 import React from "react";
 import {
   Navbar,
@@ -26,93 +26,94 @@ export default function Navbar2() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="navbar bg-base-100 fixed top-0 left-0 w-full p-2">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
+      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 w-full p-2">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden text-white"
         />
         <NavbarBrand>
           <div className="flex-1">
             <Link className="btn btn-ghost text-2xl text-white" href="/">
               <img src="logo-removebg.png" className="w-12" />
-              <span className="hidden lg:inline ">
+              <span className="hidden lg:inline text-white">
                 World Karate & Kobudo Federation
               </span>
-              <span className="inline lg:hidden text-center">WKKF</span>
+              <span className="inline lg:hidden text-white text-center">WKKF</span>
             </Link>
           </div>
         </NavbarBrand>
-      
 
-      <NavbarContent className="hidden sm:flex gap-4 " justify="end">
-        <div className="flex-none text-white">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <details >
-                <summary>About Us</summary>
-                <ul>
-                  <li>
-                    <Link className="text-white"  href="/about">About Council</Link>
-                  </li>
-                  <li>
-                    <Link className="text-white" href="/committee" title="committee">
-                      Committee
-                    </Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <Link className="text-white" href="/gallery">Gallery</Link>
-            </li>
+        <NavbarContent className="hidden sm:flex gap-4" justify="end">
+          <div className="flex-none text-white">
+            <ul className="menu menu-horizontal px-1">
+              <li className="">
+                <details>
+                  <summary className="text-white">About Us</summary>
+                  <ul className="bg-gray-900">
+                    <li>
+                      <Link className="text-white" href="/about">
+                        About Council
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="text-white" href="/committee" title="committee">
+                        Committee
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <Link className="text-white" href="/gallery">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link className="text-white" href="/qualified-members">
+                  Qualified Members
+                </Link>
+              </li>
+              <li>
+                <details className="w-50">
+                  <summary className="text-white">Register</summary>
+                  <ul className="bg-gray-900">
+                    <li>
+                      <Link className="text-white" href="/register/student">
+                        As a Student
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="text-white" href="/register/mentor">
+                        As a Mentor
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="text-white" href="/register/dojo">
+                        Dojo Registration
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </NavbarContent>
 
-            <li>
-              <Link className="text-white" href="/qualified-members">Qualified Members</Link>
-            </li>
-
-
-
-            <li>
-              <details className="w-50">
-                <summary>Register</summary>
-                <ul>
-                  <li>
-                    <Link className="text-white" href="/register/student">As a Student</Link>
-                  </li>
-                  <li>
-                    <Link className="text-white" href="/register/mentor">As a Mentor</Link>
-                  </li>
-                  <li>
-                    <Link className="text-white" href="/register/dojo">Dojo Registration</Link>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-      </NavbarContent>
-
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full text-white"
-              href={item.href}
-              size="lg"
-            >
-              {item.label}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
+        <NavbarMenu className="bg-gray-900">
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item}-${index}`}>
+              <Link
+                color="foreground"
+                className="w-full text-white"
+                href={item.href}
+                size="lg"
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+        </NavbarMenu>
       </NavbarContent>
     </Navbar>
   );

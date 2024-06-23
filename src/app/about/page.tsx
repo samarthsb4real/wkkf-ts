@@ -5,13 +5,12 @@ export default function Chairman() {
       <title>Council Mission & Vision</title>
       <div className="container mx-auto py-4 px-4">
         <div className="justify-center">
-
-          <div className="w-full p-16 justify-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left space-x-2">
+          <div className="w-full p-4 md:p-16 justify-center">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4 md:mb-8 text-left space-x-2">
               Mission
             </h1>
 
-            <p className="mb-8 text-xl text-justify">
+            <p className="mb-8 text-sm md:text-xl text-justify">
               The mission of the World Karate and Kobudo Federation (WKKF) is to
               promote, preserve, and enhance the practice of traditional Karate
               and Kobudo worldwide. We are dedicated to providing exceptional
@@ -22,11 +21,11 @@ export default function Chairman() {
               of mastery and personal growth.
             </p>
 
-            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4 md:mb-8 text-left space-x-2">
               Vision
             </h1>
 
-            <p className="mb-8 text-xl text-justify">
+            <p className="mb-8 text-sm md:text-xl text-justify">
               Our vision is to be the global leader in traditional Karate and
               Kobudo, cultivating a world where these martial arts are practiced
               and respected across all cultures. We aspire to create a unified
@@ -43,14 +42,14 @@ export default function Chairman() {
           <div className="w-full p-8 flex flex-col items-center">
             <div className="flex flex-col md:flex-row items-center md:items-start">
               <div className="w-full md:w-3/4 text-center md:text-left ">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-20">
+                <h1 className="text-xl text-white md:text-5xl font-bold mb-2 md:mb-4 mt-4">
                   Shihan Mangesh Dhimte
                 </h1>
-                <p className="font-semibold text-gray-400 text-3xl mb-6">
+                <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-4 md:mb-6">
                   Founder
                 </p>
 
-                <p className="mb-4 text-xl text-justify">
+                <p className="mb-4 text-sm md:text-xl text-justify text-white">
                   It is with great pride and joy that I welcome you to the World
                   Karate and Kobudo Federation. When I founded this
                   organization, my dream was to create a community where
@@ -63,11 +62,11 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
+              <div className="w-full mt-4 md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
                 <img
                   src="/council/founder cf.jpg"
                   alt="founder"
-                  className="rounded-3xl border w-2/3"
+                  className="rounded-3xl border w-full md:w-2/3"
                 />
               </div>
             </div>
@@ -78,14 +77,14 @@ export default function Chairman() {
           <div className="w-full p-8 flex flex-col items-center">
             <div className="flex flex-col md:flex-row items-center md:items-start">
               <div className="w-full md:w-3/4 text-center md:text-left ">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-20">
+                <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                   Sensei Aniket Kawalkar
                 </h1>
-                <p className="font-semibold text-gray-400 text-3xl mb-6">
+                <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
                   Chairman
                 </p>
 
-                <p className="mb-4 text-xl text-justify">
+                <p className="mb-4 text-sm md:text-xl text-justify text-white">
                   As Chairman of the World Karate and Kobudo Federation, I am
                   honored to see the remarkable growth and achievements of our
                   community. Your commitment to the principles of discipline,
@@ -97,11 +96,12 @@ export default function Chairman() {
                 </p>
               </div>
 
-              <div className="md:w-1/2 mt-8 md:mt-0 md:ml-16 flex justify-center">
+              <div className="w-full mt-4 md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
+                {" "}
                 <img
                   src="/council/chairman cf.JPG"
                   alt="chairman"
-                  className="rounded-3xl border w-2/3"
+                  className="rounded-3xl border w-full mt-4 md:w-2/3"
                 />
               </div>
             </div>
@@ -112,14 +112,14 @@ export default function Chairman() {
           <div className="w-full p-8 flex flex-col items-center">
             <div className="flex flex-col md:flex-row items-center md:items-start">
               <div className="w-full md:w-3/4 text-center md:text-left ">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-20">
+                <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                   Sensei Avdhut Shelar
                 </h1>
-                <p className="font-semibold text-gray-400 text-3xl mb-6">
+                <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
                   Vice Chairman & Technical Director
                 </p>
 
-                <p className="mb-4 text-xl text-justify">
+                <p className="mb-4 text-sm md:text-xl text-justify text-white">
                   It is a privilege to serve as the Vice Chairman and Technical
                   Director. Our federation stands as a beacon of technical
                   excellence and cultural preservation in the martial arts
@@ -136,7 +136,7 @@ export default function Chairman() {
                 <img
                   src="/council/vc cf.JPG"
                   alt="vc"
-                  className="rounded-3xl border w-2/3"
+                  className="rounded-3xl border w-full mt-4 md:w-2/3"
                 />
               </div>
             </div>
@@ -147,14 +147,14 @@ export default function Chairman() {
           <div className="w-full p-8 flex flex-col items-center">
             <div className="flex flex-col md:flex-row items-center md:items-start">
               <div className="w-full md:w-3/4 text-center md:text-left ">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-20">
+                <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                   Sensei Abhijit Gaikwad
                 </h1>
-                <p className="font-semibold text-gray-400 text-3xl mb-6">
+                <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
                   General Secretary
                 </p>
 
-                <p className="mb-4 text-xl text-justify">
+                <p className="mb-4 text-sm md:text-xl text-justify text-white">
                   In my role as secretary, I am constantly reminded of the
                   positive impact our federation has on individuals and
                   communities globally. Our administrative team works tirelessly
@@ -170,12 +170,11 @@ export default function Chairman() {
                 <img
                   src="/council/gs cf.JPG"
                   alt="gs"
-                  className="rounded-3xl border w-2/3"
+                  className="rounded-3xl border w-full mt-4 md:w-2/3"
                 />
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

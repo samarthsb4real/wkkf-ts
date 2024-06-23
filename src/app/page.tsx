@@ -10,6 +10,7 @@ import MapBanner from "../components/Mapbanner";
 import { NextUIProvider } from "@nextui-org/react";
 
 const images = [
+  "logo-hdr.jpg",
   "ss/3.jpg",
   "ss/5.jpg",
   "ss/2.jpg",
@@ -102,7 +103,7 @@ export default function HomePage() {
 
   return (
     <NextUIProvider>
-      <div className="no-visible-scrollbar">
+      <div className="no-visible-scrollbar bg-black" >
         {isMounted && (
           <ImagesSlider className="min-h-screen" images={images}>
             <motion.div
@@ -126,7 +127,7 @@ export default function HomePage() {
         )}
 
         <div className="max-w-full mx-auto mt-12 md:px-8 ">
-          <motion.p className="font-bold text-2xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Our Associates
           </motion.p>
 
@@ -134,7 +135,7 @@ export default function HomePage() {
             <HoverEffect items={projects} />
           </div>
 
-          <motion.p className="font-bold text-lg sm:text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-8">
+          <motion.p className="font-bold text-xl md:text-4xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-8">
             Masters
             <br />
           </motion.p>
@@ -143,14 +144,14 @@ export default function HomePage() {
             <div className="w-full p-8 flex flex-col items-center">
               <div className="flex flex-col md:flex-row items-center md:items-start m-8">
                 <div className="w-full md:w-3/4 text-center md:text-left  ">
-                  <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-4">
+                  <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                     Shihan Syuken Hattori
                   </h1>
-                  <p className="font-semibold text-gray-400 text-3xl mb-6">
+                  <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
                     International Fumonkai Karatedo Federation
                   </p>
 
-                  <p className="mb-4 text-xl text-justify">
+                  <p className="mb-4 text-sm md:text-xl text-justify text-white">
                     He has been engaged in martial arts since childhood, earning
                     high ranks in various disciplines: Aiki Martial Arts (9th
                     Dan), Goju Jiu-Jitsu (9th Dan), Shito-ryu Kenpo Karatedo
@@ -165,11 +166,11 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
+                <div className="w-full mt-4 md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
                   <img
                     src="/master-1.jpg"
                     alt="founder"
-                    className="rounded-3xl border w-2/3"
+                    className="rounded-3xl border w-full md:w-2/3"
                   />
                 </div>
               </div>
@@ -177,17 +178,17 @@ export default function HomePage() {
           </div>
 
           <div className="my-8 rounded-2xl overflow-hidden bg-black-100 border border-white/[0.2] group-hover:border-slate-700 relative z-20">
-            <div className="w-full p-8 flex flex-col items-center">
+            <div className="w-full p-8 flex flex-col items-center text-white">
               <div className="flex flex-col md:flex-row items-center md:items-start m-8">
                 <div className="w-full md:w-3/4 text-center md:text-left  ">
-                  <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-4">
+                <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
                     Sensei Takeyuki Endo
                   </h1>
-                  <p className="font-semibold text-gray-400 text-3xl mb-6">
+                  <p className="font-semibold text-gray-400 text-lg md:text-3xl mb-6">
                     Okinawan Karate and Ryukyu Ancient Martial Arts
                   </p>
 
-                  <p className="mb-4 text-xl text-justify">
+                  <p className="mb-4 text-sm md:text-xl text-justify text-white">
                     He practiced for over 20 years at the Japan Karate-do
                     Itosukai General Headquarters Dojo, guiding younger
                     generations and managing the dojo&quot;s website. In June 2017,
@@ -202,11 +203,11 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
+                <div className="w-full mt-4 md:w-1/2 md:mt-0 md:ml-8 flex justify-center">
                   <img
                     src="/master-2.jpg"
                     alt="founder"
-                    className="rounded-3xl border w-2/3"
+                    className="rounded-3xl border w-full mt-4 md:w-2/3"
                   />
                 </div>
               </div>
@@ -226,7 +227,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="flex justify-center items-center bg-gray-900 py-8">
+        <div className="flex justify-center items-center text-white bg-gray-900 py-8">
           <MapBanner
             address="Tulsi Vihar, Asangaon, Maharashtra 421601"
             lat={19.4356443857464} // Example latitude
