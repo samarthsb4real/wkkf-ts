@@ -216,15 +216,15 @@ const BoardMembersPage = () => {
     {
       id: 1,
       name: "Shihan Nimal Kalupahana",
-      position: "President IFKF Srilanka",
-      rank: "7th dan SLKF",
+      position: "President, IFKF, Sri Lanka",
+      rank: "7th dan, SLKF",
       image: "members/Shihan Nimal Kalupahana.jpg",
     },
     {
       id: 2,
       name: "Sensei Sandali Wijesinghe",
-      position: "Secretary IFKF Srilanka",
-      rank: "2nd Dan Fumonkai Karate Federation",
+      position: "Secretary, IFKF, Sri Lanka",
+      rank: "2nd Dan Fumonkai Karate Federation",
       image: "members/Sensei Sandali Wijesinghe.jpg",
     },
   ];
@@ -300,13 +300,13 @@ const BoardMembersPage = () => {
               className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+              <h2 className="text-sm md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
               <p className="text-sm md:text-lg text-gray-300">
                 {member.position}
               </p>
-              <p className="text-lg md:text-md text-gray-400">{member.rank}</p>
+              <p className="text-sm md:text-md text-gray-400">{member.rank}</p>
             </div>
           </div>
         ))}
@@ -381,7 +381,7 @@ const BoardMembersPage = () => {
               className="w-32 md:w-42 h-48 md:h-56 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+              <h2 className="text-md md:text-2xl font-semibold mb-2">
                 {member.name}
               </h2>
               <p className="text-sm md:text-lg text-gray-300">
