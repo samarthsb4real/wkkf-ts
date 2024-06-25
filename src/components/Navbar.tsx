@@ -27,7 +27,7 @@ export default function Navbar2() {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
-      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 p-2">
+      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0  p-2">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-white"
