@@ -64,6 +64,7 @@ const sortedPeople = people.sort((a, b) => rankingOrder[a.ranking] - rankingOrde
 const Page: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-black">
+      <title>Qualified Members</title>
     <h1 className="text-xl text-center md:text-3xl font-bold mb-6 text-white ">Our Esteemed Qualified Instructors</h1>
     {sortedPeople.map((person) => (
       <div

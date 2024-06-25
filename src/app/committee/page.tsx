@@ -231,6 +231,7 @@ const BoardMembersPage = () => {
 
   return (
     <div className="container mx-auto my-12 min-w-full px-4">
+      <title>Committee</title>
       <h1 className="text-3xl md:text-5xl font-bold my-8 text-center">
         Founder
       </h1>

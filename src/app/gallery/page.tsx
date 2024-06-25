@@ -82,6 +82,7 @@ const cards = [
 export default function Gallery() {
   return (
     <main className="justify-center items-center min-h-screen">
+      <title>Gallery</title>
       <div className="container mx-auto py-12">
         <LayoutGrid cards={cards} />
 
