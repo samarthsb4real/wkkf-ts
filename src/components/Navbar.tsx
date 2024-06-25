@@ -26,30 +26,30 @@ export default function Navbar2() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900 fixed top-0 left-0 z-50">
-      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 p-2 z-50">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
+      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 w-full p-2">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-white"
         />
         <NavbarBrand>
-          <div className="flex items-center">
-            <Link className="btn btn-ghost text-2xl text-white flex items-center" href="/">
+          <div className="flex-1">
+            <Link className="btn btn-ghost text-2xl text-white" href="/">
               <img src="logo-removebg.png" className="w-12" />
-              <span className="hidden lg:inline text-white ml-2">
+              <span className="hidden lg:inline text-white">
                 World Karate & Kobudo Federation
               </span>
-              <span className="inline lg:hidden text-white ml-2">WKKF</span>
+              <span className="inline lg:hidden text-white text-center">WKKF</span>
             </Link>
           </div>
         </NavbarBrand>
 
-        <NavbarContent className="hidden sm:flex gap-4 ml-auto" justify="end">
-          <div className="text-white">
+        <NavbarContent className="hidden sm:flex gap-4" justify="end">
+          <div className="flex-none text-white">
             <ul className="menu menu-horizontal px-1">
-              <li>
+              <li className="">
                 <details>
-                  <summary className="text-white cursor-pointer">About Us</summary>
+                  <summary className="text-white">About Us</summary>
                   <ul className="bg-gray-900">
                     <li>
                       <Link className="text-white" href="/about">
@@ -75,8 +75,8 @@ export default function Navbar2() {
                 </Link>
               </li>
               <li>
-                <details>
-                  <summary className="text-white cursor-pointer">Register</summary>
+                <details className="w-50">
+                  <summary className="text-white">Register</summary>
                   <ul className="bg-gray-900">
                     <li>
                       <Link className="text-white" href="/register/student">
@@ -102,10 +102,10 @@ export default function Navbar2() {
 
         <NavbarMenu className="bg-gray-900">
           {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item.label}-${index}`}>
+            <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color="foreground"
-                className="npatext-white"
+                className="w-full text-white"
                 href={item.href}
                 size="lg"
               >
