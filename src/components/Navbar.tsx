@@ -105,7 +105,7 @@ export default function Navbar2() {
             <NavbarMenuItem key={`${item.label}-${index}`}>
               <Link
                 color="foreground"
-                className="w-full text-white"
+                className="npatext-white"
                 href={item.href}
                 size="lg"
               >
