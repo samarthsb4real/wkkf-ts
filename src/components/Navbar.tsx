@@ -27,7 +27,7 @@ export default function Navbar2() {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
-      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 w-full p-2">
+      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0 p-2">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-white"
@@ -70,12 +70,7 @@ export default function Navbar2() {
                 </Link>
               </li>
               <li>
-                <Link className="text-white" href="/qualified-members">
-                  Qualified Members
-                </Link>
-              </li>
-              <li>
-                <details className="w-50">
+                <details>
                   <summary className="text-white">Register</summary>
                   <ul className="bg-gray-900">
                     <li>
@@ -96,6 +91,12 @@ export default function Navbar2() {
                   </ul>
                 </details>
               </li>
+              <li>
+                <Link className="text-white" href="/qualified-members">
+                  Qualified Members
+                </Link>
+              </li>
+              
             </ul>
           </div>
         </NavbarContent>
@@ -105,7 +106,7 @@ export default function Navbar2() {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color="foreground"
-                className="w-full text-white"
+                className="text-white"
                 href={item.href}
                 size="lg"
               >
