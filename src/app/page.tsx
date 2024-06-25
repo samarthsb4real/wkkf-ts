@@ -106,12 +106,12 @@ export default function HomePage() {
     <NextUIProvider>
       <div className="no-visible-scrollbar bg-black">
         {isMounted && (
-          <ImagesSlider images={images}>
-            <motion.div 
+          <ImagesSlider className="min-h-screen" images={images}>
+            <motion.div
               initial={{ opacity: 0, y: -80 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="min-h-screen z-50 flex flex-col justify-left items-center px-4 md:px-0"
+              className="z-50 flex flex-col justify-left items-center px-4 md:px-0"
             >
               <motion.p className="font-bold text-xl md:text-6xl text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                 Welcome to
