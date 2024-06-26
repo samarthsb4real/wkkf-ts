@@ -27,7 +27,7 @@ export default function Navbar2() {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
-      <NavbarContent className="navbar bg-gray-900 fixed top-0 left-0  p-2">
+      <NavbarContent className="bg-gray-900 relative h-16 md:fixed top-0 left-0 w-full p-2">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-white"
@@ -39,7 +39,9 @@ export default function Navbar2() {
               <span className="hidden lg:inline text-white">
                 World Karate & Kobudo Federation
               </span>
-              <span className="inline lg:hidden text-white text-center">WKKF</span>
+              <span className="inline lg:hidden text-white text-center">
+                WKKF
+              </span>
             </Link>
           </div>
         </NavbarBrand>
@@ -57,7 +59,11 @@ export default function Navbar2() {
                       </Link>
                     </li>
                     <li>
-                      <Link className="text-white" href="/committee" title="committee">
+                      <Link
+                        className="text-white"
+                        href="/committee"
+                        title="committee"
+                      >
                         Committee
                       </Link>
                     </li>
@@ -69,8 +75,9 @@ export default function Navbar2() {
                   Gallery
                 </Link>
               </li>
+
               <li>
-                <details>
+                <details className="w-50">
                   <summary className="text-white">Register</summary>
                   <ul className="bg-gray-900">
                     <li>
@@ -91,12 +98,12 @@ export default function Navbar2() {
                   </ul>
                 </details>
               </li>
+
               <li>
                 <Link className="text-white" href="/qualified-members">
                   Qualified Members
                 </Link>
               </li>
-              
             </ul>
           </div>
         </NavbarContent>
@@ -106,7 +113,7 @@ export default function Navbar2() {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color="foreground"
-                className="text-white"
+                className="w-full text-white"
                 href={item.href}
                 size="lg"
               >
