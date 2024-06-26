@@ -104,7 +104,24 @@ export default function HomePage() {
 
   return (
     <NextUIProvider>
-      <title>World Karate Kobudo Federation</title>
+      <title>World Karate & Kobudo Federation</title>
+
+      <div className="hidden">
+        <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
+          World Karate & Kobudo Federation
+        </h1>
+
+        <p className="mb-4 text-sm md:text-xl text-justify text-white">
+          The mission of the World Karate and Kobudo Federation (WKKF) is to
+          promote, preserve, and enhance the practice of traditional Karate and
+          Kobudo worldwide. We are dedicated to providing exceptional training,
+          fostering a sense of community among practitioners, and upholding the
+          highest standards of martial arts excellence. Through education,
+          certification, and competition, we aim to inspire and support martial
+          artists of all levels in their pursuit of mastery and personal growth.
+        </p>
+      </div>
+
       <div className="no-visible-scrollbar bg-black">
         {isMounted && (
           <ImagesSlider className="min-h-screen" images={images}>
