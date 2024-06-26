@@ -35,7 +35,7 @@ export default function Navbar2() {
         <NavbarBrand>
           <div className="flex-1">
             <Link className="btn btn-ghost text-2xl text-white" href="/">
-              <img src="logo-removebg.png" className="w-12" />
+              <img src="logo-removebg.png" className="w-10" />
               <span className="hidden lg:inline text-white">
                 World Karate & Kobudo Federation
               </span>
