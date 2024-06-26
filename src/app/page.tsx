@@ -104,7 +104,7 @@ export default function HomePage() {
 
   return (
     <NextUIProvider>
-      <title>Home- World Karate Kobudo Federation</title>
+      <title>World Karate Kobudo Federation</title>
       <div className="no-visible-scrollbar bg-black">
         {isMounted && (
           <ImagesSlider className="min-h-screen" images={images}>
