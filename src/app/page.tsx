@@ -9,6 +9,7 @@ import Link from "next/link";
 import MapBanner from "../components/Mapbanner";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextUIProvider } from "@nextui-org/react";
+import { Analytics } from "@vercel/analytics/react"
 
 const images = [
   "logo.jpg",
@@ -106,6 +107,7 @@ export default function HomePage() {
   return (
     <NextUIProvider>
       <SpeedInsights/>
+      <Analytics/>
       <title>World Karate & Kobudo Federation</title>
 
       <div className="hidden md:hidden">
