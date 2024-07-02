@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import React from "react";
 import {
   Navbar,
@@ -11,8 +12,19 @@ import {
   NavbarMenuItem,
   Link,
 } from "@nextui-org/react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+} from "@nextui-org/react";
 
 export default function Navbar2() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -23,7 +35,11 @@ export default function Navbar2() {
     { label: "Dojo Registration", href: "/register/dojo" },
     { label: "Gallery", href: "/gallery" },
     { label: "Qualified Members", href: "/qualified-members" },
+    { label: "Notice Board", href: "#", onClick: onOpen },
   ];
+
+  const defaultContent =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
@@ -49,6 +65,66 @@ export default function Navbar2() {
         <NavbarContent className="hidden sm:flex gap-4" justify="end">
           <div className="flex-none text-white">
             <ul className="menu menu-horizontal px-1">
+              <li>
+                <>
+                  <Button onPress={onOpen}>Notice Board</Button>
+                  <Modal
+                    size="5xl"
+                    placement="center"
+                    isOpen={isOpen}
+                    onOpenChange={onOpenChange}
+                    className="z-60 bg-gray-900 md:size-xl rounded-2xl"
+                  >
+                    <ModalContent>
+                      {(onClose) => (
+                        <div>
+                          <ModalHeader className="flex flex-col gap-0.5 md:text-2xl">
+                            Welcome to the Notice Board
+                            <caption className="text-sm text-gray-400 text-left font-light">Stay up-to-date with the current updates!</caption>
+                          </ModalHeader>
+                          <ModalBody>
+                            <Accordion>
+                              <AccordionItem
+                                key="1"
+                                aria-label="Accordion 1"
+                                subtitle="Date- DD/MM/YYYY"
+                                title="Upcoming Tournament Details"
+                              >
+                                {defaultContent}
+                              </AccordionItem>
+                              <AccordionItem
+                                key="2"
+                                aria-label="Accordion 2"
+                                subtitle="Date- DD/MM/YYYY"
+                                title="Upcoming Tournament Details #2"
+                              >
+                                {defaultContent}
+                              </AccordionItem>
+                              <AccordionItem
+                                key="3"
+                                aria-label="Accordion 3"
+                                subtitle="Date- DD/MM/YYYY"
+                                title="Upcoming Tournament Details #3"
+                              >
+                                {defaultContent}
+                              </AccordionItem>
+                            </Accordion>
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button
+                              color="primary"
+                              className="rounded-2xl"
+                              onPress={onClose}
+                            >
+                              Close
+                            </Button>
+                          </ModalFooter>
+                        </div>
+                      )}
+                    </ModalContent>
+                  </Modal>
+                </>
+              </li>
               <li className="">
                 <details>
                   <summary className="text-white">About Us</summary>

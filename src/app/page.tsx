@@ -7,10 +7,11 @@ import { ImagesSlider } from "../components/ui/images-slider";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import Link from "next/link";
 import MapBanner from "../components/Mapbanner";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextUIProvider } from "@nextui-org/react";
 
 const images = [
-  "logo-hdr.jpg",
+  "logo.jpg",
   "ss/3.jpg",
   "ss/5.jpg",
   "ss/4.jpg",
@@ -104,9 +105,10 @@ export default function HomePage() {
 
   return (
     <NextUIProvider>
+      <SpeedInsights/>
       <title>World Karate & Kobudo Federation</title>
 
-      <div className="hidden">
+      <div className="hidden md:hidden">
         <h1 className="text-xl text-white md:text-5xl font-bold mb-4 mt-4">
           World Karate & Kobudo Federation
         </h1>
@@ -181,7 +183,7 @@ export default function HomePage() {
                     (1st Dan), and practices Okinawa Kobudo and various weapons.
                     A former all-Japan kickboxing professional and mixed martial
                     artist, he is dedicated to systematizing and passing on
-                    these techniques to future generations.
+                    these techniques to future generations.
                   </p>
                 </div>
 
