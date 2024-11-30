@@ -33,7 +33,7 @@ const people: Person[] = [
   { id: 38, name: 'Prajkata Panhare', ranking: 'Shodan Black Belt', title: '' },
   { id: 39, name: 'Diksha Pandhare', ranking: 'Shodan Black Belt', title: '' },
   { id: 40, name: 'Prapti Chavhan', ranking: 'Shodan Black Belt', title: '' },
-  { id: 41, name: 'Iaxmi Vishwakarma', ranking: 'Shodan Black Belt', title: '' },
+  { id: 41, name: 'Laxmi Vishwakarma', ranking: 'Shodan Black Belt', title: '' },
   { id: 42, name: 'Tejasree Jonnal', ranking: 'Shodan Black Belt', title: '' },
   { id: 43, name: 'Tachireti Humane', ranking: 'Shodan Black Belt', title: '' },
   { id: 44, name: 'Ankita Parvat', ranking: 'Shodan Black Belt', title: '' },
@@ -63,20 +63,22 @@ const sortedPeople = people.sort((a, b) => rankingOrder[a.ranking] - rankingOrde
 
 const Page: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-black">
-      <title>Qualified Members</title>
-    <h1 className="text-xl text-center md:text-3xl font-bold mb-6 text-white ">Our Esteemed Qualified Instructors</h1>
-    {sortedPeople.map((person) => (
-      <div
-        key={person.id}
-        className="bg-gray-300 shadow-md rounded-lg p-4 mb-4 hover:bg-gray-50 transition duration-200"
-      >
-        <h2 className="text-xl font-semibold text-gray-700">{person.name}</h2>
-        <p className="text-gray-600">{person.ranking}</p>
-        <p className="text-gray-500">{person.title}</p>
+    <>
+      <h1 className="text-2xl text-center md:text-4xl font-bold mb-4 text-white mt-12">Our Esteemed Qualified Instructors</h1>
+      <div className="max-w-5xl grid grid-cols-2 md:grid-cols-3 gap-3 mx-auto p-6 bg-black">
+        <title>Qualified Members</title>
+        {sortedPeople.map((person) => (
+          <div
+            key={person.id}
+            className="bg-gray-300 shadow-xl rounded-lg p-4 mb-2 hover:bg-gray-50 transition duration-100"
+          >
+            <h2 className="text-md md:text-xl font-semibold text-gray-700">{person.name}</h2>
+            <p className="text-sm md:text-md text-gray-600">{person.ranking}</p>
+            <p className="text-gray-500">{person.title}</p>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
+    </>
   );
 };
 
