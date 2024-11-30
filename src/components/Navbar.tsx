@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
+
 import React from "react";
 import {
   Navbar,
@@ -21,6 +22,7 @@ import {
   Button,
   useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function Navbar2() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -39,7 +41,7 @@ export default function Navbar2() {
   ];
 
   const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    "This is the Official Site for World Karate & Kobudo Federation (WKKF). All Rights Reserved.";
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-gray-900">
@@ -51,7 +53,7 @@ export default function Navbar2() {
         <NavbarBrand>
           <div className="flex-1">
             <Link className="btn btn-ghost text-2xl text-white" href="/">
-              <img src="logo-removebg.png" className="w-10" />
+              <Image alt="Logo" width="50" height="50" src="/logo-removebg.png" className="w-10" />
               <span className="hidden lg:inline text-white">
                 World Karate & Kobudo Federation
               </span>
@@ -83,6 +85,9 @@ export default function Navbar2() {
                             <caption className="text-sm text-gray-400 text-left font-light">Stay up-to-date with the current updates!</caption>
                           </ModalHeader>
                           <ModalBody>
+                            
+                          {/* The content for Notice-board will be here.
+
                             <Accordion>
                               <AccordionItem
                                 key="1"
@@ -108,7 +113,9 @@ export default function Navbar2() {
                               >
                                 {defaultContent}
                               </AccordionItem>
-                            </Accordion>
+                            </Accordion> */}
+                            <h1 className="text-white text-xl">Hang on, We&apos;re Coming Soon!</h1>
+                            
                           </ModalBody>
                           <ModalFooter>
                             <Button
