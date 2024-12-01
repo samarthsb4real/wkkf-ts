@@ -25,8 +25,8 @@ const MapBanner: React.FC<MapBannerProps> = ({ address, lat, lng }) => {
         </div>
         <p className="text-gray-400">
           Tulsi Vihar, Near Railway Station, Asangaon (East)
-         <br/> 
-         Whatsapp Contact No.- 9422491409
+          <br />
+          Whatsapp Contact No.- 9422491409
         </p>
       </div>
       {/* Right side: Map */}

@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="footer items-center p-4 bg-neutral text-neutral-content bottom-0 w-full">
       <aside className="items-center grid-flow-col">
-       
-          <img src="logo-footer-removebg.png" className="w-12"/>
+
+        <img src="logo-footer-removebg.png" className="w-12" />
         <p className="ml-2">
           World Karate & Kobudo Federation, All Rights Reserved
         </p>
