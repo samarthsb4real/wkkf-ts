@@ -85,8 +85,8 @@ export default function Navbar2() {
                             <caption className="text-sm text-gray-400 text-left font-light">Stay up-to-date with the current updates!</caption>
                           </ModalHeader>
                           <ModalBody>
-                            
-                          {/* The content for Notice-board will be here.
+
+                            {/* The content for Notice-board will be here.
 
                             <Accordion>
                               <AccordionItem
@@ -115,7 +115,7 @@ export default function Navbar2() {
                               </AccordionItem>
                             </Accordion> */}
                             <h1 className="text-white text-xl">Hang on, We&apos;re Coming Soon!</h1>
-                            
+
                           </ModalBody>
                           <ModalFooter>
                             <Button
